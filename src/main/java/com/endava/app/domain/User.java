@@ -2,6 +2,7 @@ package com.endava.app.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.validator.constraints.UniqueElements;
 
 import java.time.LocalDate;
 
@@ -17,7 +18,7 @@ public class User {
             initialValue = 10000
     )
     @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
+            strategy = GenerationType.IDENTITY,
             generator = "primary_sequence"
     )
     private Long id;
@@ -28,9 +29,10 @@ public class User {
     @Column(name="last_name")
     private String lastName;
 
-    @Column(name="account_name")
+    @Column(name="account_name", unique = true)
     private String accountName;
 
+    @Column(unique = true)
     private String email;
 
     @Column(name="date_of_birth")
