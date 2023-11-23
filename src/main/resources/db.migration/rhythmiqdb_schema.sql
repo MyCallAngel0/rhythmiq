@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS `user` (
     `last_name` varchar(50) NOT NULL,
     `email` varchar(50) UNIQUE NOT NULL,
     `account_name` varchar(50) UNIQUE NOT NULL,
-    `date_of_birth` date NOT NULL,
+    `date_of_birth` date
+    NOT NULL,
     `gender` enum('M','F','O') NOT NULL,
     `password` varchar(255) NOT NULL,
     `role` enum('user','artist', 'admin') DEFAULT 'user',

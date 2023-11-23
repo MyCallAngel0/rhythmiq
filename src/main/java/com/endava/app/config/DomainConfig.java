@@ -10,4 +10,5 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableJpaRepositories("com.endava.app.repos")
 @EnableTransactionManagement
 public class DomainConfig {
+
 }
