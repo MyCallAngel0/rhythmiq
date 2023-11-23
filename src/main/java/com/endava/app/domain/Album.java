@@ -15,7 +15,7 @@ public class Album {
     @Column(name="title", length=30)
     private String title;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "artist_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "artist_id", updatable = false)
     private User user;
 }
