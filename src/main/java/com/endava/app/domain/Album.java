@@ -1,7 +1,8 @@
 package com.endava.app.domain;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Getter
@@ -17,5 +18,5 @@ public class Album {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "artist_id")
-    private User user;
+    private com.endava.app.domain.User user;
 }
