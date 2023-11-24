@@ -1,7 +1,10 @@
 package com.endava.app.Controller;
 
 import com.endava.app.Services.PlaylistService;
-import com.endava.app.domain.Playlist;
+import com.endava.app.model.requests.PlaylistAddSongsBatchRequestDTO;
+import com.endava.app.model.requests.PlaylistRequestDTO;
+import com.endava.app.model.response.PlaylistResponseDTO;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -16,42 +19,54 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/api/playlists")
 public class PlaylistController {
 
     private final PlaylistService playlistService;
 
-    @Autowired
-    public PlaylistController(PlaylistService playlistService) {
-        this.playlistService = playlistService;
+    @GetMapping("/{id}")
+    public ResponseEntity<PlaylistResponseDTO> getPlaylistById(@PathVariable Long id) {
+        var responseDTO = playlistService.getPlaylistById(id);
+        return ResponseEntity.ok(responseDTO);
     }
 
     @GetMapping
-    public List<Playlist> getAllPlaylists() {
-        return playlistService.getAllPlaylists();
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<Playlist> getPlaylistById(@PathVariable Long id) {
-        Playlist playlist = playlistService.getPlaylistById(id);
-        return ResponseEntity.ok(playlist);
+    public ResponseEntity<List<PlaylistResponseDTO>> getAllPlaylists() {
+        var playlists = playlistService.getAllPlaylists();
+        return ResponseEntity.ok(playlists);
     }
 
     @PostMapping
-    public ResponseEntity<Playlist> addPlaylist(@RequestBody Playlist playlist) {
-        Playlist newPlaylist = playlistService.addPlaylist(playlist);
-        return ResponseEntity.ok(newPlaylist);
+    public ResponseEntity<PlaylistResponseDTO> createPlaylist(@RequestBody PlaylistRequestDTO requestDTO) {
+        var responseDTO = playlistService.createPlaylist(requestDTO);
+        return ResponseEntity.ok(responseDTO);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Playlist> updatePlaylist(@PathVariable Long id, @RequestBody Playlist playlistDetails) {
-        Playlist updatedPlaylist = playlistService.updatePlaylist(id, playlistDetails);
-        return ResponseEntity.ok(updatedPlaylist);
+    public ResponseEntity<PlaylistResponseDTO> updatePlaylist(@PathVariable Long id,
+                                                              @RequestBody PlaylistRequestDTO requestDTO) {
+        var responseDTO = playlistService.updatePlaylist(id, requestDTO);
+        return ResponseEntity.ok(responseDTO);
     }
+
+    @PostMapping("/{playlistId}/addSong/{songId}")
+    public ResponseEntity<PlaylistResponseDTO> addSongToPlaylist(@PathVariable Long playlistId, @PathVariable Long songId) {
+        var responseDTO = playlistService.addSongToPlaylist(playlistId, songId);
+        return ResponseEntity.ok(responseDTO);
+    }
+
+    @PostMapping("/{playlistId}/addSongs")
+    public ResponseEntity<PlaylistResponseDTO> addSongsToPlaylist(@PathVariable Long playlistId, @RequestBody PlaylistAddSongsBatchRequestDTO requestDTO) {
+        var responseDTO = playlistService.addSongsToPlaylist(playlistId, requestDTO);
+        return ResponseEntity.ok(responseDTO);
+    }
+
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deletePlaylist(@PathVariable Long id) {
         playlistService.deletePlaylist(id);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.noContent().build();
     }
+
 }

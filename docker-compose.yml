@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: rhythmiqdb
+      MYSQL_USER: rhythmiq
+      MYSQL_PASSWORD: sql123
+    ports:
+      - "3307:3306"

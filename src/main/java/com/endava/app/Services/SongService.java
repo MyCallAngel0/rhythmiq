@@ -14,6 +14,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -31,7 +32,7 @@ public class SongService {
         log.info("Getting all songs");
         return songs.stream()
                 .map(user -> mapToSongResponseDTO(user))
-                .toList();
+                .collect(Collectors.toList());
     }
 
     public SongResponseDTO getSongById(Long id) {
