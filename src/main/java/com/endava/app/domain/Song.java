@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Set;
+import java.util.List;
 
 @Entity
 @Getter
@@ -17,17 +17,14 @@ public class Song {
     @GeneratedValue
     private Long id;
 
-    @Column(name="song_title")
+    @Column(name="song_title", nullable = false)
     private String title;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "artist_id")
+    @JoinColumn(name = "artist_id", nullable = false)
     private User artist;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "album_id")
     private Album album;
-
-    @ManyToMany(mappedBy = "songs")
-    private Set<Playlist> playlists;
 }

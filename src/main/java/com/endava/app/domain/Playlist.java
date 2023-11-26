@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Set;
+import java.util.List;
 
 @Entity
 @Getter
@@ -13,13 +13,14 @@ import java.util.Set;
 public class Playlist {
     @Id
     @Column(name="playlist_id")
+    @GeneratedValue
     private Long id;
 
-    @Column(name="playlist_title")
+    @Column(name="playlist_title", nullable = false)
     private String title;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     @ManyToMany
@@ -28,5 +29,5 @@ public class Playlist {
             joinColumns = @JoinColumn(name = "playlist_id"),
             inverseJoinColumns = @JoinColumn(name = "song_id")
     )
-    private Set<Song> songs;
+    private List<Song> songs;
 }

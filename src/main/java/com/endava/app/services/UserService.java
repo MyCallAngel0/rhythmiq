@@ -2,21 +2,23 @@ package com.endava.app.services;
 
 import com.endava.app.domain.User;
 import com.endava.app.model.UserDTO;
+import com.endava.app.repos.AlbumRepository;
 import com.endava.app.repos.UserRepository;
+import jakarta.transaction.Transactional;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import com.endava.app.util.NotFoundException;
+import com.endava.app.util.exceptions.NotFoundException;
 import java.util.List;
 
+@Slf4j
 @Service
+@AllArgsConstructor
 public class UserService {
     private final UserRepository userRepository;
-
-    @Autowired
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+    private final AlbumRepository albumRepository;
 
     public List<UserDTO> findAll() {
         final List<User> users = userRepository.findAll(Sort.by("id"));
@@ -37,15 +39,19 @@ public class UserService {
         return userRepository.save(user).getId();
     }
 
+    @Transactional
     public void update(final Long id, final UserDTO userDTO) {
         final User user = userRepository.findById(id)
                 .orElseThrow(NotFoundException::new);
         mapToEntity(userDTO, user);
+        log.info("User with id {} was successfully updated", id);
         userRepository.save(user);
     }
 
+    @Transactional
     public void delete(final Long id) {
         userRepository.deleteById(id);
+        log.info("User with id {} was successfully deleted", id);
     }
 
     private UserDTO mapToDTO(final User user, final UserDTO userDTO) {
@@ -55,6 +61,7 @@ public class UserService {
         userDTO.setAccountName(user.getAccountName());
         userDTO.setEmail(user.getEmail());
         userDTO.setDob(user.getDob());
+        userDTO.setAlbums(albumRepository.getAlbumTitlesByUser(user));
         return userDTO;
     }
 
