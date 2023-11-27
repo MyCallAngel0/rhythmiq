@@ -4,6 +4,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.web.multipart.MultipartFile;
 
 @Getter
 @Setter
@@ -18,4 +19,7 @@ public class SongDTO {
     private String artist;
 
     private String album;
+
+    @NotBlank(message = "You must upload a song")
+    private MultipartFile mp3File;
 }

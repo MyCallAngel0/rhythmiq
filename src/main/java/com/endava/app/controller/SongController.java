@@ -43,7 +43,7 @@ public class SongController {
     }
 
     @PostMapping
-    public ResponseEntity<String> add(@RequestBody final SongDTO songDTO) {
+    public ResponseEntity<String> add(@ModelAttribute final SongDTO songDTO) {
         try {
             log.info("Adding a song");
             Long songId = songService.create(songDTO);

@@ -15,7 +15,12 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.*;
 import java.util.List;
 
 @Slf4j
@@ -74,11 +79,31 @@ public class SongService {
         log.info("Song with id {} was successfully deleted", id);
     }
 
+    private String saveMP3File(SongDTO songDTO) {
+        String destination = "src/main/resources/static/assets/songs/" + songDTO.getArtist();
+        Path path = FileSystems.getDefault().getPath(destination);
+        try {
+            if (!Files.exists(path)) {
+                Files.createDirectories(path);
+            }
+            File filepath = new File(destination);
+            String fileName = songDTO.getMp3File().getOriginalFilename();
+            File file = new File(filepath, fileName);
+            Path filePath = file.toPath();
+            Files.copy(songDTO.getMp3File().getInputStream(), filePath, StandardCopyOption.REPLACE_EXISTING);
+            return destination + "/" + fileName;
+        } catch (IOException e) {
+            log.error("Error saving MP3 file: {}", e.getMessage());
+            throw new RuntimeException("Error saving MP3 file: " + e.getMessage());
+        }
+    }
+
     private SongDTO mapToDTO(final Song song, final SongDTO songDTO) {
         songDTO.setId(song.getId());
         songDTO.setTitle(song.getTitle());
         songDTO.setAlbum((song.getAlbum() != null) ? song.getAlbum().getTitle() : null);
         songDTO.setArtist(song.getArtist().getAccountName());
+        songDTO.setMp3File(null);
         return songDTO;
     }
 
@@ -87,6 +112,7 @@ public class SongService {
         song.setTitle(songDTO.getTitle());
         song.setArtist(artist);
         song.setAlbum(album);
+        song.setFilepath(saveMP3File(songDTO));
         return song;
     }
 }

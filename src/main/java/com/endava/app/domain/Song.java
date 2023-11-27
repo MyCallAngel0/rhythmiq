@@ -27,4 +27,7 @@ public class Song {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "album_id")
     private Album album;
+
+    @Column(name="filepath", unique = true)
+    private String filepath;
 }
