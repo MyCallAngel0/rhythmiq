@@ -5,12 +5,14 @@ import com.endava.app.model.PlaylistDTO;
 import com.endava.app.model.SongDTO;
 import com.endava.app.services.PlaylistService;
 import com.endava.app.domain.Playlist;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -62,10 +64,10 @@ public class PlaylistController {
 
     //TODO : Add songs to playlist fix
     @PostMapping(path="/add/songs/{playlist_id}")
-    public ResponseEntity<String> addSongsToPlaylist(@PathVariable(name="playlist_id") Long playlistId, @RequestBody final List<Long> songIds) {
+    public ResponseEntity<String> addSongsToPlaylist(@PathVariable(name="playlist_id") Long playlistId, @RequestBody final PlaylistSongs songIds) {
         try {
             log.info("Adding songs to playlist with id {}", playlistId);
-            playlistService.addSongs(playlistId, songIds);
+            playlistService.addSongs(playlistId, songIds.getSongIds());
             return ResponseEntity.ok("Songs added");
         } catch (Exception e) {
             log.error(e.getMessage());
@@ -95,5 +97,9 @@ public class PlaylistController {
             log.error(e.getMessage());
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
+    }
+    @Data
+    private static class PlaylistSongs {
+        private List<Long> songIds;
     }
 }

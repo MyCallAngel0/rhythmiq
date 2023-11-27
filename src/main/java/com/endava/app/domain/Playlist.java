@@ -1,10 +1,12 @@
 package com.endava.app.domain;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 @Entity
 @Getter
@@ -29,5 +31,5 @@ public class Playlist {
             joinColumns = @JoinColumn(name = "playlist_id"),
             inverseJoinColumns = @JoinColumn(name = "song_id")
     )
-    private List<Song> songs;
+    private Set<Song> songs;
 }

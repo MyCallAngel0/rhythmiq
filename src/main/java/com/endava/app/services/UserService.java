@@ -4,13 +4,12 @@ import com.endava.app.domain.User;
 import com.endava.app.model.UserDTO;
 import com.endava.app.repos.AlbumRepository;
 import com.endava.app.repos.UserRepository;
+import com.endava.app.util.exceptions.user.UserNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import com.endava.app.util.exceptions.NotFoundException;
 import java.util.List;
 
 @Slf4j
@@ -30,7 +29,7 @@ public class UserService {
     public UserDTO get(final Long id) {
         return userRepository.findById(id)
                 .map(user -> mapToDTO(user, new UserDTO()))
-                .orElseThrow(NotFoundException::new);
+                .orElseThrow(UserNotFoundException::new);
     }
 
     public Long create(final UserDTO userDTO) {
@@ -42,7 +41,7 @@ public class UserService {
     @Transactional
     public void update(final Long id, final UserDTO userDTO) {
         final User user = userRepository.findById(id)
-                .orElseThrow(NotFoundException::new);
+                .orElseThrow(UserNotFoundException::new);
         mapToEntity(userDTO, user);
         log.info("User with id {} was successfully updated", id);
         userRepository.save(user);

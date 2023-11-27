@@ -6,7 +6,8 @@ import com.endava.app.model.AlbumDTO;
 import com.endava.app.repos.AlbumRepository;
 import com.endava.app.repos.SongRepository;
 import com.endava.app.repos.UserRepository;
-import com.endava.app.util.exceptions.NotFoundException;
+import com.endava.app.util.exceptions.album.AlbumNotFoundException;
+import com.endava.app.util.exceptions.user.UserNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -34,14 +35,14 @@ public class AlbumService {
     public AlbumDTO get(final Long id) {
         return albumRepository.findById(id)
                 .map(album -> mapToDTO(album, new AlbumDTO()))
-                .orElseThrow(NotFoundException::new);
+                .orElseThrow(AlbumNotFoundException::new);
     }
 
     public Long create(final AlbumDTO albumDTO) {
         User artist = userRepository.findByName(albumDTO.getArtist());
         if (artist == null) {
             log.error("User not found");
-            throw new NotFoundException("User not found");
+            throw new UserNotFoundException("User not found");
         }
         final Album album = new Album();
         mapToEntity(albumDTO, album, artist);
@@ -51,7 +52,7 @@ public class AlbumService {
     @Transactional
     public void update(final Long id, final AlbumDTO albumDTO) {
         final Album album = albumRepository.findById(id)
-                .orElseThrow(NotFoundException::new);
+                .orElseThrow(AlbumNotFoundException::new);
         album.setTitle(albumDTO.getTitle());
         log.info("Album with id {} was successfully updated", id);
         albumRepository.save(album);

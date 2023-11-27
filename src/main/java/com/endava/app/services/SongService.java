@@ -7,8 +7,9 @@ import com.endava.app.model.SongDTO;
 import com.endava.app.repos.AlbumRepository;
 import com.endava.app.repos.SongRepository;
 import com.endava.app.repos.UserRepository;
-import com.endava.app.util.exceptions.NotFoundException;
-import com.endava.app.util.exceptions.UnauthorizedException;
+import com.endava.app.util.exceptions.song.SongNotFoundException;
+import com.endava.app.util.exceptions.user.UnauthorizedException;
+import com.endava.app.util.exceptions.user.UserNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -36,19 +37,21 @@ public class SongService {
     public SongDTO get(Long id) {
         return songRepository.findById(id)
                 .map(song -> mapToDTO(song, new SongDTO()))
-                .orElseThrow(NotFoundException::new);
+                .orElseThrow(SongNotFoundException::new);
     }
 
     public Long create(final SongDTO songDTO) {
         User artist = userRepository.findByName(songDTO.getArtist());
         if (artist == null) {
             log.error("User not found");
-            throw new NotFoundException("User not found");
+            throw new UserNotFoundException("User not found");
         }
         Album album = albumRepository.findByTitle(songDTO.getAlbum());
-        if (!album.getUser().equals(artist)) {
-            log.error("Album with id {} doesn't belong to user {}", album.getId(), artist.getAccountName());
-            throw new UnauthorizedException("Album doesn't belong to this user");
+        if (album != null) {
+            if (!album.getUser().equals(artist)) {
+                log.error("Album with id {} doesn't belong to user {}", album.getId(), artist.getAccountName());
+                throw new UnauthorizedException("Album doesn't belong to this user");
+            }
         }
         final Song song = new Song();
         mapToEntity(songDTO, song, artist, album);
@@ -58,7 +61,7 @@ public class SongService {
     @Transactional
     public void update(final Long id, final SongDTO songDTO) {
         final Song song = songRepository.findById(id)
-                .orElseThrow(NotFoundException::new);
+                .orElseThrow(SongNotFoundException::new);
         song.setTitle(songDTO.getTitle());
         // Обновите другие поля, если они есть
         log.info("Song with id {} was updated", song.getId());
@@ -74,7 +77,7 @@ public class SongService {
     private SongDTO mapToDTO(final Song song, final SongDTO songDTO) {
         songDTO.setId(song.getId());
         songDTO.setTitle(song.getTitle());
-        songDTO.setAlbum(song.getAlbum().getTitle());
+        songDTO.setAlbum((song.getAlbum() != null) ? song.getAlbum().getTitle() : null);
         songDTO.setArtist(song.getArtist().getAccountName());
         return songDTO;
     }

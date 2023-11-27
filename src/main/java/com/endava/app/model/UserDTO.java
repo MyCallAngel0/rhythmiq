@@ -3,6 +3,7 @@ package com.endava.app.model;
 import com.endava.app.domain.Album;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.UniqueElements;
@@ -24,6 +25,7 @@ public class UserDTO {
 
     @NotBlank(message = "Account name must nor be blank")
     @UniqueElements(message = "This account name is already used")
+    @Size(min = 3, max = 50)
     private String accountName;
 
     @Email(message = "provide a valid email address")

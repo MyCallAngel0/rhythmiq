@@ -1,18 +1,16 @@
-package com.endava.app.util.exceptions;
+package com.endava.app.util.exceptions.song;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class NotFoundException extends RuntimeException {
+public class SongNotFoundException extends RuntimeException {
 
-    public NotFoundException() {
+    public SongNotFoundException() {
         super();
     }
 
-    public NotFoundException(final String message) {
+    public SongNotFoundException(final String message) {
         super(message);
     }
-
 }

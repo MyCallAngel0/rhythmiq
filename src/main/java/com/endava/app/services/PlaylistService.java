@@ -1,24 +1,24 @@
 package com.endava.app.services;
 
-import com.endava.app.domain.Album;
 import com.endava.app.domain.Playlist;
 import com.endava.app.domain.Song;
 import com.endava.app.domain.User;
-import com.endava.app.model.AlbumDTO;
 import com.endava.app.model.PlaylistDTO;
 import com.endava.app.repos.PlaylistRepository;
 import com.endava.app.repos.SongRepository;
 import com.endava.app.repos.UserRepository;
-import com.endava.app.util.exceptions.NotFoundException;
-import jakarta.persistence.EntityNotFoundException;
+import com.endava.app.util.exceptions.playlist.PlaylistNotFoundException;
+import com.endava.app.util.exceptions.playlist.SongAlreadyInPlaylistException;
+import com.endava.app.util.exceptions.song.SongNotFoundException;
+import com.endava.app.util.exceptions.user.UserNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -39,14 +39,14 @@ public class PlaylistService {
     public PlaylistDTO get(Long id) {
         return playlistRepository.findById(id)
                 .map(playlist -> mapToDTO(playlist, new PlaylistDTO()))
-                .orElseThrow(() -> new EntityNotFoundException("Playlist not found with id: " + id));
+                .orElseThrow(() -> new PlaylistNotFoundException("Playlist not found with id: " + id));
     }
 
     public Long create(final PlaylistDTO playlistDTO) {
         User user = userRepository.findByName(playlistDTO.getUser());
         if (user == null) {
             log.error("User not found");
-            throw new NotFoundException("User not found");
+            throw new UserNotFoundException("User not found");
         }
         final Playlist playlist = new Playlist();
         mapToEntity(playlistDTO, playlist, user);
@@ -55,7 +55,7 @@ public class PlaylistService {
 
     public void update(Long id, final PlaylistDTO playlistDTO) {
         final Playlist playlist = playlistRepository.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Playlist not found with id: " + id));
+                .orElseThrow(() -> new PlaylistNotFoundException("Playlist not found with id: " + id));
         playlist.setTitle(playlistDTO.getTitle());
         log.info("Playlist with id {} was successfully updated", id);
         // Обновите поля playlist согласно playlistDetails
@@ -70,13 +70,24 @@ public class PlaylistService {
     //TODO : Add songs to playlist fix
     @Transactional
     public void addSongs(Long playlistId, List<Long> songIds) {
-        Playlist playlist = playlistRepository.findById(playlistId)
-                .orElseThrow(() -> new EntityNotFoundException("Playlist not found"));
+        var playlist = playlistRepository.findById(playlistId)
+                .orElseThrow(() -> new PlaylistNotFoundException("Playlist not found with id: " + playlistId));
 
-        List<Song> songs = songRepository.findAllById(songIds);
-        playlist.getSongs().addAll(songs);
+        var currentSongs = playlist.getSongs();
+        var songsToAdd = songIds.stream()
+                .map(songId -> songRepository.findById(songId)
+                        .orElseThrow(() -> new SongNotFoundException("Song not found with id: " + songId)))
+                .collect(Collectors.toSet());
 
-        log.info("Songs added to the playlist with id {}", playlistId);
+        var anySongAlreadyInPlaylist = songsToAdd.stream()
+                .anyMatch(currentSongs::contains);
+
+        if (anySongAlreadyInPlaylist) {
+            throw new SongAlreadyInPlaylistException("One or more songs are already in the playlist");
+        }
+
+        playlist.getSongs().addAll(songsToAdd);
+        log.info("Songs successfully added in playlist");
         playlistRepository.save(playlist);
     }
 
@@ -84,7 +95,7 @@ public class PlaylistService {
         playlistDTO.setId(playlist.getId());
         playlistDTO.setTitle(playlist.getTitle());
         playlistDTO.setUser(playlist.getUser().getAccountName());
-        playlistDTO.setSongs(playlist.getSongs().stream().map(song -> song.getTitle()).toList());
+        playlistDTO.setSongs(playlist.getSongs().stream().map(Song::getTitle).toList());
         return playlistDTO;
     }
 
