@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+.block1 {
+    background-image: url(https://mobirise.com/extensions/glassm5/corporate/assets/images/mbr.jpg);
+    height: 700px;
+    width: 1265px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.85;
+    display: block;
+    flex-direction: column;
+}
+
+.menu {
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff8a;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.appName a {
+    font-weight: bold;
+    color: #4a6586;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-size: 1em;
+}
+
+.appName:hover a {
+    color: #0b2647;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.buttonCreate {
+    padding: 10px 20px;
+    background-color: #4a6586;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.4s;
+    margin-right: 10px;
+
+}
+
+.buttonCreate:hover {
+    background-color: #0b2647;
+    cursor: pointer;
+}
+
+.welcome-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    position: fixed;
+    padding: 55px;;
+    transform: translateY(-50%);
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    margin: 300px 20px 20px 80px;
+}
+
+
+.welcome-text {
+    font-weight: bold;
+    color: #0b2647;
+    font-size: 2.5em;
+    text-align: center;
+
+}
+
+.app-description {
+    color: #0b2647;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.start-button a {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #56667b 0%, #919ace 100%);
+    transition: all 0.3s;
+    color: white;
+    display: inline-block;
+    justify-content: center;
+    margin-left: 130px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.start-button:hover a {
+    background: #0b2647;
+    cursor: pointer;
+    transition-duration: 0s;
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+
+.block2 {
+    background-image: url(https://mobirise.com/extensions/glassm5/corporate/assets/images/background5.jpg);
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 60px 20px;
+    width: 70%;
+    float: right;
+}
+
+.album {
+    flex-basis: calc(20% - 40px);
+    margin: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.album img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.album-title {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.container{
+    width: 25%;
+    display: flex;
+    position: absolute;
+}
+.grid{
+    display: grid;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+.cnop{
+    display: flex;
+}
+.playlist{
+    background: #7588a2;
+    color: white;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.playlist:hover{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.album:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #919ace;
+}
