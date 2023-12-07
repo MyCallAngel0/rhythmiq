@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${playlist.title}">Playlist Title</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #1F1F1F;
+            color: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 75%;
+            margin-top: 20px;
+            background-color: #282828;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            color: white;
+        }
+
+        th {
+            background-color: #121212;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #222222;
+        }
+
+    </style>
+</head>
+<body>
+<div style="position: absolute; top: 10px; left: 10px;">
+    <a href="javascript:history.back()" style="text-decoration: none; color: lightgray;">&lt; Back</a>
+</div>
+<header>
+    <h1 th:text="${playlist.title}">Playlist Title</h1>
+</header>
+
+<table>
+    <thead>
+    <tr>
+        <th>Song Title</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Iterate over songs and display them -->
+    <tr th:each="song, iterStat : ${playlist.songs}" th:class="${iterStat.odd} ? 'odd' : 'even'">
+        <td th:text="${song.title}">Song Title</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<configuration>
+
+    <!-- Console Appender for INFO, DEBUG, and ERROR -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- File Appender for INFO, DEBUG, and ERROR -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/Logs.log</file> <!-- Specify the path to your log file -->
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger for Console -->
+    <root level="info">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+    <!-- Custom Logger for File -->
+    <logger name="com.endava" level="debug" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger>
+
+</configuration>

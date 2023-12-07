@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="'Albums'" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #000000;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: lightgray;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #1F1F1F;
+            color: lightgray;
+        }
+
+        th, td {
+            border: 1px solid #535353;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #121212;
+            color: lightgray;
+        }
+
+        tr:nth-child(even) {
+            background-color: #222222;
+        }
+
+        .float-end {
+            float: right;
+        }
+
+        .button-container {
+            text-align: right;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: lightgray;
+            margin-right: 7px;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        .btn-primary {
+            background-color: #6c757d;
+            color: #fff;
+            margin-right: 7px;
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #5a6268;
+        }
+
+        #openModalBtn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: slategray;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+
+        #openModalBtn::before,
+        #openModalBtn::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 5px;
+            background-color: #fff;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s, width 0.3s;
+        }
+
+        #openModalBtn::before {
+            left: -35px;
+        }
+
+        #openModalBtn::after {
+            right: -35px;
+        }
+
+        #openModalBtn:hover {
+            background-color: slategray;
+        }
+
+        #openModalBtn:hover::before,
+        #openModalBtn:hover::after {
+            width: 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/playlistModal.css">
+    <script th:src="@{/assets/js/JWTdecoder.js}"></script>
+</head>
+<body>
+<div layout:fragment="content" class="content-container">
+    <div style="position: absolute; top: 10px; left: 10px;">
+        <a href="javascript:history.back()" style="text-decoration: none; color: lightgray;">&lt; Back</a>
+    </div>
+    <div class="d-flex flex-wrap mb-4">
+        <h1 th:text="'Album List'" class="flex-grow-1" />
+    </div>
+    <div th:if="${albums.empty}" class="text-muted" th:text="'No albums found'" />
+    <div th:if="${!albums.empty}">
+        <table class="table table-striped table-hover align-middle">
+            <thead>
+            <tr>
+                <th th:text="'Title'" scope="col" />
+                <th th:text="'Artist'" scope="col" />
+                <th><!-- --></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="album : ${albums}">
+                <td> <a th:href="@{/album(id=${album.id})}" style="text-decoration: none; color:inherit" th:text="${album.title}"></a></td>
+                <td class="artist-name" th:text="${album.artist}" />
+                <td class="button-container">
+                    <div class="user-form">
+                        <form th:action="@{/albums/delete/{id}(id=${album.id})}"
+                              th:data-confirm-message="'Album deleted'" method="post" class="js-submit-confirm d-inline">
+                            <button th:href="@{/albums/edit/{id}(id=${album.id})}" th:text="'Edit album'" class="btn btn-sm btn-secondary" />
+                        </form>
+                        <form th:action="@{/albums/delete/{id}(id=${album.id})}"
+                              th:data-confirm-message="'Album deleted'" method="post" class="js-submit-confirm d-inline">
+                            <button th:text="'Delete album'" type="submit" class="btn btn-sm btn-secondary" />
+                        </form>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <script th:inline="javascript">
+        checkCredentials();
+        async function checkCredentials() {
+            try {
+                console.info("here");
+                const user = await getJWTSub();
+                var rows = document.querySelectorAll('table tr');
+                rows.forEach(function(row) {
+                     var artist = row.cells[1].textContent;
+                     console.log("Artist",  artist);
+                     console.log("User", user);
+                     if (artist !== user) {
+                         Array.from(row.getElementsByClassName('user-form')).forEach(element => element.hidden = true)
+                     } else {
+                         Array.from(row.getElementsByClassName('user-form')).forEach(element => element.hidden = false);
+                     }
+                });
+            } catch (error) {
+                document.querySelectorAll('.user-form').forEach(element => {
+                    element.hidden = true;
+                });
+                console.error(error);
+            }
+        }
+    </script>
+    <div>
+        <a style="cursor: pointer" id="openModalBtn" class="btn btn-primary ms-2"><span>Add album</span></a>
+    </div>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <h2>Create Album</h2>
+        <form id="albumForm">
+            <label for="albumTitle">Album Title:</label>
+            <input type="text" id="albumTitle" required>
+            <button type="submit">Create Album</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", async function () {
+            const artist = await getJWTSub();
+            try {
+
+                if (artist !== null) {
+                    const openModalBtn = document.getElementById("openModalBtn");
+                    const modal = document.getElementById("modal");
+                    const closeModalBtn = document.getElementById("closeModalBtn");
+                    const playlistForm = document.getElementById("albumForm");
+
+                    openModalBtn.addEventListener("click", function () {
+                        modal.style.display = "block";
+                    });
+
+                    closeModalBtn.addEventListener("click", function () {
+                        modal.style.display = "none";
+                    });
+
+                    window.addEventListener("click", function (event) {
+                        if (event.target === modal) {
+                            modal.style.display = "none";
+                        }
+                    });
+
+                    playlistForm.addEventListener("submit", function (event) {
+                        event.preventDefault();
+
+                        const title = document.getElementById("albumTitle").value;
+
+                        console.log("Creating Album with title:", title);
+
+                        fetch('http://localhost:8080/album/add', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({title, artist}),
+                        })
+                            .then(response => response.text())
+                            .then(data => {
+                                console.log('Success:', JSON.stringify({title, artist}));
+                            })
+                            .catch((error) => {
+                                console.error('Error:', error);
+                            });
+                        modal.style.display = "none";
+                    });
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    </script>
+</div>
+</body>
+</html>

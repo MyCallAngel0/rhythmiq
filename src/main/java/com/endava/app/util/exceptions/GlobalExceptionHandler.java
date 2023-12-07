@@ -1,6 +1,7 @@
 package com.endava.app.util.exceptions;
 
 import com.endava.app.util.exceptions.user.UnauthorizedException;
+import com.endava.app.util.exceptions.user.UserAlreadyExistsException;
 import com.endava.app.util.exceptions.user.UserNotFoundException;
 import com.endava.app.util.exceptions.album.AlbumNotFoundException;
 import com.endava.app.util.exceptions.song.SongNotFoundException;
@@ -10,6 +11,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.context.request.WebRequest;
 
 import java.util.Date;
@@ -18,7 +20,6 @@ import java.util.Map;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
-
     @ExceptionHandler(SongNotFoundException.class)
     public ResponseEntity<ErrorDetails> handleSongNotFoundException(SongNotFoundException ex, WebRequest request) {
         var errorDetails = new ErrorDetails(
@@ -46,6 +47,15 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
     }
 
+    @ExceptionHandler(UserAlreadyExistsException.class)
+    public ResponseEntity<ErrorDetails> handleUserAlreadyExists(UserAlreadyExistsException ex, WebRequest request) {
+        var errorDetails = new ErrorDetails(
+                new Date(),
+                ex.getMessage(),
+                request.getDescription(false));
+        return new ResponseEntity<>(errorDetails, HttpStatus.NOT_ACCEPTABLE);
+    }
+
     @ExceptionHandler(AlbumNotFoundException.class)
     public ResponseEntity<ErrorDetails> handleAlbumNotFoundException(AlbumNotFoundException ex, WebRequest request) {
         var errorDetails = new ErrorDetails(
@@ -67,11 +77,12 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<ErrorDetails> handleGlobalException(Exception ex, WebRequest request) {
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public ResponseEntity<ErrorDetails> InternalServerError(Exception ex, WebRequest request) {
         var errorDetails = new ErrorDetails(
                 new Date(),
                 ex.getMessage(),
                 request.getDescription(false));
-        return new ResponseEntity<>(errorDetails, HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
     }
 }

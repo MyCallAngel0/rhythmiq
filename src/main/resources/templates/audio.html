@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music App</title>
+    <style>
+        body {
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #121212;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+		}
+
+        header {
+			background-color: #000;
+			padding: 10px;
+			text-align: center;
+			width: 100%;
+			z-index: 1;
+			display: flex;
+			justify-content: space-between;
+			align-items: center; /* Align items in the center */
+		}
+
+        .header-buttons {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start; /* Align items to the left */
+			flex: 1; /* Take remaining space */
+		}
+		
+		.header-text {
+			flex: 1;
+			text-align: center;
+		}
+
+		.header-buttons button {
+			background-color: transparent;
+			border: none;
+			color: #fff;
+			font-size: 16px;
+			cursor: pointer;
+			margin-right: 20px;
+			outline: none;
+		}
+
+		.header-buttons button.active {
+			font-weight: bold;
+		}
+
+        main {
+			padding: 20px;
+			flex-grow: 1;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center; /* Center content */
+		}
+
+        section {
+            margin-bottom: 20px;
+            width: calc(33.33% - 20px); /* Three columns with margin */
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        h1, h2, h3 {
+            color: #1db954;
+        }
+
+        .song-list {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #212121;
+            padding: 20px;
+            box-sizing: border-box;
+            order: -1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 100px; /* Adjust as needed based on your header height */
+            bottom: 0;
+            overflow-y: auto;
+            z-index: 2; /* Ensure sidebar is above the main content */
+        }
+
+        .playlist-item {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #000;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1; /* Ensure footer is above the sidebar */
+        }
+
+        .audio-player {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #282828;          
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #audioPlayer {
+            width: 100%;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        #seekBar {
+            width: 50%;
+            cursor: pointer;
+            background: #f53192;
+            border-radius: 4px;
+            margin: 40px, 0;
+        }
+
+        #seekBar::-webkit-slider-thumb {
+            background: #f53192;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 8px solid #fff;
+            box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+        }
+
+        #songInfo {
+            margin-bottom: 20px;
+			height: 70px;
+        }
+
+        #controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #playPause,
+        #next,
+        #prev {
+            background-color: #1db954;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            margin: 0 10px;
+            padding: 5px;
+            cursor: pointer;
+            outline: none;
+			width
+        }
+
+        #playPause:hover,
+        #next:hover,
+        #prev:hover {
+            background-color: #25cc5b;
+        }
+
+        #loop {
+            background-color: #1db954;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-size: 10px;
+            margin: 0 10px;
+            padding: 10px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #loop:hover {
+            background-color: #25cc5b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+	<div class="header-buttons">
+        <button class="active">Home</button>
+        <button>Search</button>
+    </div>
+    <h1 class="header-text">My Music App</h1>
+</header>
+
+<main>
+    <!-- New section for songs -->
+    <section class="song-list" id="your-songs-section">
+        <h2>Your Songs</h2>
+        
+        <!-- Add more songs as needed -->
+    </section>
+
+    <!-- Featured Playlists section -->
+    <section>
+        <h2>Featured Playlists</h2>
+        <div class="featured-playlist">
+            <div class="playlist-item">
+                <img src="playlist1.jpg" alt="Playlist 1">
+                <h3>Playlist 1</h3>
+            </div>
+            <div class="playlist-item">
+                <img src="playlist2.jpg" alt="Playlist 2">
+                <h3>Playlist 2</h3>
+            </div>
+            <div class="playlist-item">
+                <img src="playlist3.jpg" alt="Playlist 3">
+                <h3>Playlist 3</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add more sections as needed -->
+
+</main>
+
+<div class="sidebar">
+    <h2>Playlists</h2>
+    <ul>
+        <li>Playlist 1</li>
+        <li>Playlist 2</li>
+        <li>Playlist 3</li>
+        <!-- Add more playlists as needed -->
+    </ul>
+</div>
+
+<footer>
+    <div class="audio-player">
+        <!-- Your audio player content here -->
+        <audio id="audioPlayer">
+            <source id="audioSource" src="" type="audio/mp3" hidden="hidden">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div id="songInfo">
+            <h3 id="songTitle" style="margin 10px 0 10px">Song Title</h3>
+            <p id="artist" style="margin 10px 0 10px">Artist</p>
+        </div>
+
+        <input type="range" id="seekBar" min="0" value="0" step="1" onchange="updateSeekBar()" />
+        <div id="controls">
+            <button id="prev" onclick="playPreviousSong()">⏮️</button>
+            <button id="playPause" onclick="togglePlayPause()">▶️</button>
+            <button id="next" onclick="playNextSong()">⏭️</button>
+            <button id="loop" onclick="toggleLoop()">🔄</button>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const yourSongsSection = document.getElementById('your-songs-section');
+
+    const songs = [
+        { title: 'This Is Not The End', artist: 'Krewella & Pegboard Nerds', file: '/static/assets/songs/MyCallAngel0/[Dubstep] - Krewella & Pegboard Nerds - This Is Not The End [Monstercat FREE Release].mp3', image: 'song.jpg' },
+		{ title: 'Try This', artist: 'Pegboard Nerds', file: '[Drumstep] - Pegboard Nerds - Try This [Monstercat Release].mp3', image: 'song.jpg' },
+		{ title: 'Shut Up And Drive', artist: 'Rihanna', file: 'Rihanna - Shut Up And Drive.mp3', image: 'song.jpg' },
+        // Add more songs as needed
+    ];
+
+    const audio = document.getElementById('audioPlayer');
+    const audioSource = document.getElementById('audioSource');
+    const songTitleElement = document.getElementById('songTitle');
+    const artistElement = document.getElementById('artist');
+    const seekBar = document.getElementById('seekBar');
+    var playPauseButton = document.getElementById('playPause');
+
+    let currentSongIndex = 0;
+
+    function playSong(index) {
+        if (index >= 0 && index < songs.length) {
+            currentSongIndex = index;
+            const song = songs[currentSongIndex];
+            audioSource.src = song.file;
+            audio.load();
+            audio.play();
+            updateSongInfo(song.title, song.artist);
+            updatePlaylistUI();
+        }
+    }
+
+    function updateSongInfo(title, artist) {
+        songTitleElement.textContent = title;
+        artistElement.textContent = artist;
+    }
+
+    function updatePlaylistUI() {
+        // Highlight the current song in the playlist
+        const playlistItems = document.querySelectorAll('.playlist-item');
+        playlistItems.forEach((item, index) => {
+            item.classList.toggle('active', index === currentSongIndex);
+        });
+    }
+
+    function togglePlayPause() {
+		if (audio.paused) {
+			audio.play();
+			playPauseButton.textContent = '⏸️'; // Change to pause icon
+		} else {
+			audio.pause();
+			playPauseButton.textContent = '▶️'; // Change to play icon
+		}
+	}
+
+    function playNextSong() {
+        currentSongIndex = (currentSongIndex + 1) % songs.length;
+        playSong(currentSongIndex);
+    }
+
+    function playPreviousSong() {
+        currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+        playSong(currentSongIndex);
+    }
+
+    function updateSeekBar() {
+        const newPosition = seekBar.value;
+        audio.currentTime = newPosition;
+    }
+
+    // Update the seek bar as the audio plays
+    audio.addEventListener('timeupdate', function () {
+        seekBar.value = audio.currentTime;
+    });
+
+    // Set the max attribute of the seek bar when the audio metadata is loaded
+    audio.addEventListener('loadedmetadata', function () {
+        seekBar.max = audio.duration;
+    });
+
+    // Play the next song when the current one ends
+    audio.addEventListener('ended', function () {
+        playNextSong();
+    });
+
+    function toggleLoop() {
+        // Your loop logic here
+        // ...
+    }
+
+    // Initial setup
+    playSong(currentSongIndex);
+
+    // Add songs to the "Your Songs" section
+    songs.forEach(song => {
+        const songItem = document.createElement('div');
+        songItem.classList.add('song-item');
+
+        const img = document.createElement('img');
+        img.src = song.image;
+        img.alt = song.title;
+
+        const title = document.createElement('h3');
+        title.textContent = song.title;
+
+        const artist = document.createElement('p');
+        artist.textContent = song.artist;
+
+        songItem.appendChild(img);
+        songItem.appendChild(title);
+        songItem.appendChild(artist);
+
+        songItem.addEventListener('click', function () {
+            playSong(songs.indexOf(song));
+        });
+
+        yourSongsSection.appendChild(songItem);
+    });
+
+    function toggleLoop() {
+        loopMode = (loopMode + 1) % 4; // 0, 1, 2, 3 -> No loop, Loop playlist, Loop song, Loop shuffle
+        updateLoopButton();
+    }
+
+    function toggleShuffle() {
+        isShuffleOn = !isShuffleOn;
+        updateShuffleButton();
+    }
+
+    function updateLoopButton() {
+        switch (loopMode) {
+            case 0:
+                loopButton.textContent = '🔄'; // No loop
+                audio.loop = false;
+                break;
+            case 1:
+                loopButton.textContent = '🔁'; // Loop playlist
+                audio.loop = true;
+                isShuffleOn = false;
+                updateShuffleButton();
+                break;
+            case 2:
+                loopButton.textContent = '🔂'; // Loop song
+                audio.loop = true;
+                isShuffleOn = false;
+                updateShuffleButton();
+                break;
+            case 3:
+                loopButton.textContent = '🔀'; // Shuffle
+                audio.loop = false;
+                isShuffleOn = true;
+                break;
+        }
+    }
+
+    // Initial setup
+    playSong(currentSongIndex);
+    updatePlaylistUI();
+</script>
+
+</body>
+</html>

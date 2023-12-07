@@ -1,23 +1,21 @@
 package com.endava.app.controller;
 
-import com.endava.app.model.AlbumDTO;
-import com.endava.app.model.PlaylistDTO;
-import com.endava.app.model.SongDTO;
+import com.endava.app.model.request.PlaylistRequest;
 import com.endava.app.services.PlaylistService;
-import com.endava.app.domain.Playlist;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
-@RestController
-@RequestMapping("/playlists")
+@Controller
 public class PlaylistController {
 
     private final PlaylistService playlistService;
@@ -27,7 +25,7 @@ public class PlaylistController {
         this.playlistService = playlistService;
     }
 
-    @GetMapping
+    @GetMapping(path = "playlists")
     public ResponseEntity<Object> getAllPlaylists() {
         try {
             log.info("Getting all playlists");
@@ -48,12 +46,11 @@ public class PlaylistController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
-
-    @PostMapping(path="/add")
-    public ResponseEntity<String> add(@RequestBody final PlaylistDTO playlistDTO) {
+    @PostMapping(path="playlist/add")
+    public ResponseEntity<String> add(@RequestBody final PlaylistRequest playlistRequest) {
         try {
             log.info("Creating an playlist");
-            Long playlistId = playlistService.create(playlistDTO);
+            Long playlistId = playlistService.create(playlistRequest);
             log.info("Playlist added with id {}", playlistId);
             return ResponseEntity.ok("Playlist added with id : " + playlistId);
         } catch (Exception e) {
@@ -62,7 +59,17 @@ public class PlaylistController {
         }
     }
 
-    //TODO : Add songs to playlist fix
+    @GetMapping(path = "playlist/{id}")
+    public String getAlbumById(@PathVariable(name="id") Long id, Model model) {
+        try {
+            log.info("Getting playlist with id {}", id);
+            model.addAttribute("playlist", playlistService.get(id));
+            return "playlists/songs";
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
     @PostMapping(path="/add/songs/{playlist_id}")
     public ResponseEntity<String> addSongsToPlaylist(@PathVariable(name="playlist_id") Long playlistId, @RequestBody final PlaylistSongs songIds) {
         try {
@@ -76,10 +83,10 @@ public class PlaylistController {
     }
 
     @PutMapping(path= "/{playlist_id}")
-    public ResponseEntity<String> update(@PathVariable(name= "playlist_id") Long playlistId, @RequestBody final PlaylistDTO playlistDTO) {
+    public ResponseEntity<String> update(@PathVariable(name= "playlist_id") Long playlistId, @RequestBody final PlaylistRequest playlistRequest) {
         try {
             log.info("Updating playlist with id {}", playlistId);
-            playlistService.update(playlistId, playlistDTO);
+            playlistService.update(playlistId, playlistRequest);
             return ResponseEntity.ok("Playlist updated");
         } catch (Exception e) {
             log.error(e.getMessage());

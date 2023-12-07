@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rhythmiq - A Web Music Player</title>
+    <link rel="icon" href="/static/images/RhythmiqIcon.png" sizes="64x64" type="image/png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://open.spotifycdn.com/cdn/build/web-player/web-player.848ea6cc.css">
+<!--
+    <link rel="stylesheet" href="https://open.spotifycdn.com/cdn/build/web-player/vendor~web-player.ab6b6ad7.css">
+-->
+    <style data-styled="active" data-styled-version="5.3.11"></style>
+    <link rel="stylesheet" type="text/css" href="https://open.spotifycdn.com/cdn/build/web-player/xpui-routes-your-library-x.afae70ed.css">
+<!--
+    <link rel="stylesheet" type="text/css" href="https://open.spotifycdn.com/cdn/build/web-player/home-v2.6c6cc1ee.css">
+-->
+    <link rel="stylesheet" href="/assets/css/playlistModal.css">
+    <link rel="stylesheet" th:href="@{/assets/css/songs.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/player.css}" />
+    <style>
+    /*@keyframes slide-down-custom {
+        0% {
+            bottom: 707px !important;
+        }
+        100% {
+            bottom: 0px;
+        }
+    }
+    @-webkit-keyframes slide-down-custom {
+        0% {
+            bottom: 707px !important;
+        }
+        100% {
+            bottom: 0px;
+        }
+    }
+    @-moz-keyframes slide-down-custom {
+        0% {
+            bottom: 707px !important;
+        }
+        100% {
+            bottom: 0px;
+        }
+    }*/
+    .facDIsOQo9q7kiWc4jSg.coBkWVskipFo8KxLKief:before {
+        backdrop-filter: blur(0)!important;
+    }
+    .LKFFk88SIRC9QKKUWR5u {
+        display: flex;
+        font-size: 18px;
+        gap: 15px;
+        z-index: 1;
+    }
+
+    svg {
+        fill: #fff;
+        width: 24px;
+    }
+
+    .UvXqRORKQr_N3jlgGTcS .RAWO6AczuDMOTI0qAc0a {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .g4PZpjkqEh5g7xDpCr2K {
+     padding-bottom: 200px !important;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://open.spotifycdn.com/cdn/build/web-player/xpui-routes-search.12003864.css">
+    <script th:src="@{/assets/js/songs.js}"></script>
+    <script th:src="@{/assets/js/JWTdecoder.js}"></script>
+</head>
+<body>
+<div id="main">
+    <div data-testid="root" class="Root encore-dark-theme" style="--panel-gap: 8px;">
+        <div></div>
+        <div class="ZQftYELq0aOsg6tPbVbV" data-right-sidebar-hidden="true" style="--top-bar-opacity: 1.0;">
+            <div class="BdcvqBAid96FaHAmPYw_">
+                <nav class="sqKERfoKl4KwrtHqcKOd" aria-label="Principal">
+                    <div class="EZFyDnuQnx5hw78phLqP">
+                        <ul class="QuHe04rU4bj0Z5U9E2Tk">
+                            <li class="LU0q0itTx2613uiATSig InvalidDropTarget">
+                                <a draggable="false" aria-label="Home" class="link-subtle UYeKN11KAw61rZoyjcgZ DzWw3g4E_66wu9ktqn36 active" href="/" aria-current="page">
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 iYxpxA home-icon" viewBox="0 0 24 24">
+                                        <path d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z"></path>
+                                    </svg>
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 iYxpxA home-active-icon" viewBox="0 0 24 24">
+                                        <path d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z"></path>
+                                    </svg>
+                                    <span data-encore-id="type" class="Type__TypeElement-sc-goli3j-0 bkjCej">Home</span>
+                                </a>
+                            </li>
+                            <li class="LU0q0itTx2613uiATSig InvalidDropTarget">
+                                <a draggable="false" aria-label="Search" class="link-subtle UYeKN11KAw61rZoyjcgZ" href="/search">
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 iYxpxA search-icon" viewBox="0 0 24 24">
+                                        <path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path>
+                                    </svg>
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 iYxpxA search-active-icon" viewBox="0 0 24 24">
+                                        <path d="M15.356 10.558c0 2.623-2.16 4.75-4.823 4.75-2.664 0-4.824-2.127-4.824-4.75s2.16-4.75 4.824-4.75c2.664 0 4.823 2.127 4.823 4.75z"></path>
+                                        <path d="M1.126 10.558c0-5.14 4.226-9.28 9.407-9.28 5.18 0 9.407 4.14 9.407 9.28a9.157 9.157 0 0 1-2.077 5.816l4.344 4.344a1 1 0 0 1-1.414 1.414l-4.353-4.353a9.454 9.454 0 0 1-5.907 2.058c-5.18 0-9.407-4.14-9.407-9.28zm9.407-7.28c-4.105 0-7.407 3.274-7.407 7.28s3.302 7.279 7.407 7.279 7.407-3.273 7.407-7.28c0-4.005-3.302-7.278-7.407-7.278z"></path>
+                                    </svg>
+                                    <span data-encore-id="type" class="Type__TypeElement-sc-goli3j-0 bkjCej">Search</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="EZFyDnuQnx5hw78phLqP hjb8tUL3rpUa0ez4ZtAj">
+                        <div class="PpUTJL2NIYDUnmfzVIbE" tabindex="-1" aria-expanded="false">
+                            <div class="">
+                                <header class="UvXqRORKQr_N3jlgGTcS">
+                                    <div class="j8iKBDzqTDtnDv4XbmrK">
+                                        <div class="prGqQr33U0mG14TJ5V8a">
+                                            <div class="Button-sc-1dqy6lx-0 khATCl RAWO6AczuDMOTI0qAc0a OMCDc2F7g_AufJAtaKfL ufICQKJq0XJE5iiIsZfj caTDfb6Oj7a5_8jBLUSo aRyoyQFJkzhoSOnf2ERM vOp2HlcPkxOHebo3If32 VNdHKKznHkpJ0VHoDmai eZnAGhYcXE4Bt0a7958z ratGUXdpLCkyXZNaJryg ETclQEbcAcQdGdSioHaJ cuH8l_VHkTiz_NYVslQe" data-encore-id="buttonTertiary">
+                                          <span aria-hidden="true" class="IconWrapper__Wrapper-sc-16usrgb-0 jEDcnm">
+                                             <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA">
+                                                <path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path>
+                                             </svg>
+                                          </span>
+                                                Your Playlist
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="wBsWS202aGdsul2kEGUf"></div>
+                            </div>
+                            <div class="os-host os-host-foreign os-theme-spotify os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-scrollbar-horizontal-hidden _K79lE9KrIAkl_bUSSUM os-host-transition">
+                                <div class="os-resize-observer-host observed">
+                                    <div class="os-resize-observer" style="left: 0px; right: auto;"></div>
+                                </div>
+                                <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
+                                    <div class="os-resize-observer"></div>
+                                </div>
+                                <div class="os-content-glue" style="margin: 0px; width: 352px; height: 142px;"></div>
+                                <div class="os-padding">
+                                    <div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;">
+                                        <div class="os-content" style="padding: 0px; height: 100%; width: 100%;">
+                                            <div class="ifVI2CEdOZGgMWIUN2Cw">
+                                                <div>
+                                                    <ul id="playlist-container"></ul>
+                                                    <script th:inline="javascript">
+                                                        document.addEventListener("DOMContentLoaded", async function () {
+                                                            // Fetch playlist data via fetch API
+                                                            const username = await getJWTSub();
+                                                            fetch("api/playlists/" + username)
+                                                                .then(response => {
+                                                                    if (!response.ok) {
+                                                                        throw new Error("Error fetching playlists");
+                                                                    }
+                                                                    return response.json();
+                                                                })
+                                                                .then(playlists  => {
+                                                                    // Populate the playlist container
+                                                                    const playlistContainer = document.getElementById("playlist-container");
+                                                                    for(const playlist of playlists) {
+                                                                        const listItem = document.createElement("li");
+                                                                        listItem.setAttribute("style", "margin-top: 7px");
+                                                                        //listItem.textContent = `${playlist.title}`;
+                                                                        const anchorElement = document.createElement("a");
+                                                                        anchorElement.href = `/playlist/${playlist.id}`;
+                                                                        anchorElement.textContent = `${playlist.title}`;
+                                                                        anchorElement.setAttribute("style", "text-decoration: none; color:inherit; margin: 16px");
+                                                                        listItem.appendChild(anchorElement);
+                                                                        playlistContainer.appendChild(listItem);
+                                                                    }
+                                                                })
+                                                                .catch(error => {
+                                                                    console.error(error.message);
+                                                                });
+                                                        });
+                                                    </script>
+                                                </div>
+                                                <section class="xi3ytXbuSuzCYy5LwjFu ufICQKJq0XJE5iiIsZfj caTDfb6Oj7a5_8jBLUSo aRyoyQFJkzhoSOnf2ERM vOp2HlcPkxOHebo3If32 VNdHKKznHkpJ0VHoDmai eZnAGhYcXE4Bt0a7958z ratGUXdpLCkyXZNaJryg ETclQEbcAcQdGdSioHaJ cuH8l_VHkTiz_NYVslQe">
+                                                    <div class="eL94fWmhg6WbrdKZfGEW"><a data-encore-id="buttonPrimary" id="openModalBtn" class="Button-sc-qlcn5g-0 jgTSDy"><span class="ButtonInner-sc-14ud5tc-0 jSvPxO encore-inverted-light-set eL94fWmhg6WbrdKZfGEW" style="cursor: pointer">Create new playlist</span></a></div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden">
+                                    <div class="os-scrollbar-track">
+                                        <div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div>
+                                    </div>
+                                </div>
+                                <div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden">
+                                    <div class="os-scrollbar-track">
+                                        <div class="os-scrollbar-handle" style="height: 41.3295%; transform: translate(0px, 0px);"></div>
+                                    </div>
+                                </div>
+                                <div class="os-scrollbar-corner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div data-testid="LayoutResizer__resize-bar" class="LayoutResizer__resize-bar LayoutResizer__inline-end"><label class="hidden-visually">Redimensionează fereastra principală de navigare<input class="LayoutResizer__input" type="range" min="280" max="420" step="10" value="353"></label></div>
+            </div>
+            <div class="jEMA2gVoLgPQqAFrPhFw">
+                <header data-testid="topbar" class="facDIsOQo9q7kiWc4jSg coBkWVskipFo8KxLKief qxbaGYC8rgMLfyOuYRCM">
+                    <img th:src="@{/static/images/RhythmiqIcon.png}" width="48"/>
+                    <p style="font-size: 24px; color: lightgray; font-family: 'Roboto', 'Arial', sans-serif"><b>Rhythmiq</b></p>
+                    <div class="rwdnt1SmeRC_lhLVfIzg">
+                            <div class="LKFFk88SIRC9QKKUWR5u">
+                                <a onclick="location.href='/register'" style="cursor: pointer">Register</a>
+                                <a onclick="location.href='/login'" style="cursor: pointer" data-testid="login-button" data-encore-id="buttonPrimary" class="Button-sc-qlcn5g-0 fyugtm">
+                                    <span class="ButtonInner-sc-14ud5tc-0 bzuYkS encore-inverted-light-set">Login</span>
+                                </a>
+                                    <a id="profile-link">
+                                        <img th:src="@{/static/images/user-icon.jpg}" alt="User" width="32">
+                                    </a>
+                                    <script th:inline="javascript">
+                                        document.addEventListener('DOMContentLoaded', async function () {
+                                            try {
+                                                const username = await getJWTSub();
+                                                if (username !== null) {
+                                                    const profile = document.getElementById("profile-link");
+                                                    profile.setAttribute("onclick", `location.href='/users/profile/${username}'`)
+                                                    profile.setAttribute("style", 'cursor: pointer')
+                                                }
+                                            } catch (error) {
+                                                console.error(error);
+                                            }
+                                        });
+                                    </script>
+                            </div>
+                    </div>
+                </header>
+                <div class="main-view-container">
+                    <div class="under-main-view"></div>
+                    <div class="os-host os-host-foreign os-theme-spotify os-host-resize-disabled os-host-scrollbar-horizontal-hidden main-view-container__scroll-node os-host-transition os-host-overflow os-host-overflow-y">
+                        <div class="os-resize-observer-host observed">
+                            <div class="os-resize-observer" style="left: 0px; right: auto;"></div>
+                        </div>
+                        <div class="os-padding">
+                            <div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;">
+                                <div class="os-content" style="padding: 0px; height: 100%; width: 100%;">
+                                    <div class="main-view-container__scroll-node-child-spacer"></div>
+                                    <div class="main-view-container__scroll-node-child" style="min-height: calc(((100vh - 64px) - 90px) - 519px);">
+                                        <main tabindex="-1" aria-label="Spotify - Web Player: Music for everyone">
+                                            <div class="HsbczDqu9qjcYr7EIdHR" style="background-color: rgb(83, 83, 83);"></div>
+                                            <section data-testid="home-page">
+                                                <div class="uIJTvxFOg2izOY7aRRiU">
+                                                    <div class="I3EivnXTjYMpSbPUiYEg contentSpacing">
+                                                        <section class="QyANtc_r7ff_tqrf5Bvc Shelf" data-testid="component-shelf">
+                                                            <div class="q8AZzDc_1BumBHZg0tZb">
+                                                                <div class="OMuRYOdpUbGif12_lRJl">
+                                                                    <div class="onVWL7MW4PW9FyVajBAc">
+                                                                        <h2 data-encore-id="type" class="Type__TypeElement-sc-goli3j-0 kqHgh">Featured Albums</h2>
+                                                                    </div>
+                                                                    <a draggable="false" class="a7lvtXATo3HALtrsOHtO HOgue4Eg4UdBR58M0633" th:href="@{albums}"><span data-encore-id="type" class="Type__TypeElement-sc-goli3j-0 eoWRdH" style="cursor: pointer">Show all</span></a>
+                                                                </div>
+                                                            </div>
+                                                            <div data-testid="grid-container" class="iKwGKEfAfW7Rkx2_Ba4E Z4InHgCs2uhk0MU93y_a" style="--column-count: 3; --grid-gap: 18px; --min-container-width: 372px;">
+                                                                <div class="LunqxlFIupJw_Dkx6mNx">
+                                                                    <div draggable="true" class="XiVwj5uoqqSFpS4cYOC6">
+                                                                        <div class="xBV4XgMq0gC5lQICFWY_ NH6UaoYYe47eIHA2Rmal">
+                                                                            <div class="g4PZpjkqEh5g7xDpCr2K" style="--card-color: #6D797E;">
+                                                                                <div class=""><img aria-hidden="false" draggable="false" loading="lazy" src="https://admindagency.com/wp-content/uploads/2023/05/Most-Iconic-Album-Cover-Designs-nr6_Mayhem_HERO.png" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="E1N1ByPFWo4AJLHovIBQ">
+                                                                            <a draggable="false" title="Mega Hit Mix" class="Nqa6Cw3RkDMV8QnYreTr" dir="auto" href="/playlist/37i9dQZF1DXbYM3nMM0oPk">
+                                                                                <div class="Type__TypeElement-sc-goli3j-0 gIkgYW nk6UgB4GUYNoAcPtAQaG" data-encore-id="type">Mega Hit Mix</div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="tsv7E_RBBw6v0XTQlcRo" data-testid="card-click-handler"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="LunqxlFIupJw_Dkx6mNx">
+                                                                    <div draggable="true" class="XiVwj5uoqqSFpS4cYOC6">
+                                                                        <div class="xBV4XgMq0gC5lQICFWY_ NH6UaoYYe47eIHA2Rmal">
+                                                                            <div class="g4PZpjkqEh5g7xDpCr2K" style="--card-color: #9C6D3E;">
+                                                                                <div class=""><img aria-hidden="false" draggable="false" loading="lazy" src="https://admindagency.com/wp-content/uploads/2023/05/Most-Iconic-Album-Cover-Designs-nr6_Mayhem_HERO.png" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="E1N1ByPFWo4AJLHovIBQ">
+                                                                            <a draggable="false" title="Mellow Lofi Morning" class="Nqa6Cw3RkDMV8QnYreTr" dir="auto" href="/playlist/37i9dQZF1DX6QClArDhvcW">
+                                                                                <div class="Type__TypeElement-sc-goli3j-0 gIkgYW nk6UgB4GUYNoAcPtAQaG" data-encore-id="type">Mellow Lofi Morning</div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="tsv7E_RBBw6v0XTQlcRo" data-testid="card-click-handler"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="LunqxlFIupJw_Dkx6mNx">
+                                                                    <div draggable="true" class="XiVwj5uoqqSFpS4cYOC6">
+                                                                        <div class="xBV4XgMq0gC5lQICFWY_ NH6UaoYYe47eIHA2Rmal">
+                                                                            <div class="g4PZpjkqEh5g7xDpCr2K" style="--card-color: #0858B8;">
+                                                                                <div class=""><img aria-hidden="false" draggable="false" loading="lazy" src="https://admindagency.com/wp-content/uploads/2023/05/Most-Iconic-Album-Cover-Designs-nr6_Mayhem_HERO.png" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="E1N1ByPFWo4AJLHovIBQ">
+                                                                            <a draggable="false" title="Christmas Pop" class="Nqa6Cw3RkDMV8QnYreTr" dir="auto" href="/playlist/37i9dQZF1DX0A8zVl7p82B">
+                                                                                <div class="Type__TypeElement-sc-goli3j-0 gIkgYW nk6UgB4GUYNoAcPtAQaG" data-encore-id="type">Christmas Pop</div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="tsv7E_RBBw6v0XTQlcRo" data-testid="card-click-handler"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <div class="I3EivnXTjYMpSbPUiYEg contentSpacing">
+                                                        <section class="QyANtc_r7ff_tqrf5Bvc Shelf" data-testid="component-shelf">
+                                                            <div class="q8AZzDc_1BumBHZg0tZb">
+                                                                <div class="OMuRYOdpUbGif12_lRJl">
+                                                                    <div class="onVWL7MW4PW9FyVajBAc">
+                                                                        <h2 data-encore-id="type" class="Type__TypeElement-sc-goli3j-0 kqHgh">Song List</h2>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-testid="grid-container" class="iKwGKEfAfW7Rkx2_Ba4E Z4InHgCs2uhk0MU93y_a">
+                                                                <table>
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>Title</th>
+                                                                        <th>Artist</th>
+                                                                        <th>Timestamp</th>
+                                                                        <th>Album</th>
+                                                                        <th></th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody id="songTableBody">
+
+                                                                    </tbody>
+                                                                </table>
+                                                                <div class="popup" id="playlistPopup">
+                                                                    <label for="playlistSelect">Select Playlist:</label>
+                                                                    <select id="playlistSelect">
+                                                                        <option value="playlist1">Playlist 1</option>
+                                                                        <option value="playlist2">Playlist 2</option>
+                                                                        <!-- Add more playlists as needed -->
+                                                                    </select>
+                                                                    <button id="addToPlaylistBtn">Add to Playlist</button>
+                                                                </div>
+
+                                                                <div class="overlay" id="overlay"></div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </main>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden">
+                            <div class="os-scrollbar-track">
+                                <div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div>
+                            </div>
+                        </div>
+                        <div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden">
+                            <div class="os-scrollbar-track">
+                                <div class="os-scrollbar-handle" style="height: 56.872%; transform: translate(0px, 256.661px);"></div>
+                            </div>
+                        </div>
+                        <div class="os-scrollbar-corner"></div>
+                    </div>
+                    <div>
+                        <div style="display: none;">
+                            <div class="VideoPlayer__container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <h2>Create Playlist</h2>
+        <form id="playlistForm">
+            <label for="playlistTitle">Playlist Title:</label>
+            <input type="text" id="playlistTitle" required>
+            <button type="submit">Create Playlist</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", async function () {
+            const user = await getJWTSub();
+            try {
+
+                if (user !== null) {
+                    const openModalBtn = document.getElementById("openModalBtn");
+                    const modal = document.getElementById("modal");
+                    const closeModalBtn = document.getElementById("closeModalBtn");
+                    const playlistForm = document.getElementById("playlistForm");
+
+                    openModalBtn.addEventListener("click", function () {
+                        modal.style.display = "block";
+                    });
+
+                    closeModalBtn.addEventListener("click", function () {
+                        modal.style.display = "none";
+                    });
+
+                    window.addEventListener("click", function (event) {
+                        if (event.target === modal) {
+                            modal.style.display = "none";
+                        }
+                    });
+
+                    playlistForm.addEventListener("submit", function (event) {
+                        event.preventDefault();
+
+                        // Get the playlist title from the input
+                        const title = document.getElementById("playlistTitle").value;
+
+                        // Perform the logic to create the playlist (replace this with your actual logic)
+                        console.log("Creating playlist with title:", title);
+
+                        fetch('http://localhost:8080/playlist/add', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({title, user}),
+                        })
+                            .then(response => response.text())
+                            .then(data => {
+                                console.log('Success:', JSON.stringify({title}, {user}));
+                            })
+                            .catch((error) => {
+                                console.error('Error:', error);
+                            });
+                        modal.style.display = "none";
+                    });
+                }
+            } catch (error) {
+                console.error(error);
+            }
+            });
+    </script>
+</div>
+<audio id="audioPlayer">
+    <source id="audioSource" type="audio/mpeg mp3" src="/static/assets/songs/MyCallAngel0/[Dubstep] - Krewella & Pegboard Nerds - This Is Not The End [Monstercat FREE Release].mp3">
+</audio>
+<div class="music-player">
+    <img src="https://cdn-icons-png.flaticon.com/512/8094/8094235.png" width="64"/>
+    <div class="player-info">
+        <div class="song-title" id="songTitle"></div>
+        <div class="artist" id="artistName"></div>
+    </div>
+    <div class="controls">
+        <button id="prevBtn" onclick="playPreviousSong()">&lt;&lt;</button>
+        <button id="playPauseBtn" onclick="togglePlayPause()"><img id="buttonImage" src="https://cdn.icon-icons.com/icons2/2226/PNG/512/play_icon_134504.png"/></button>
+        <button id="nextBtn" onclick="playNextSong()">&gt;&gt;</button>
+    </div>
+    <input type="range" id="seekBar" value="0">
+</div>
+</body>
+</html>

@@ -2,7 +2,8 @@ package com.endava.app.services;
 
 import com.endava.app.domain.Album;
 import com.endava.app.domain.User;
-import com.endava.app.model.AlbumDTO;
+import com.endava.app.model.request.AlbumRequest;
+import com.endava.app.model.response.AlbumResponse;
 import com.endava.app.repos.AlbumRepository;
 import com.endava.app.repos.SongRepository;
 import com.endava.app.repos.UserRepository;
@@ -25,35 +26,35 @@ public class AlbumService {
     private final UserRepository userRepository;
     private final SongRepository songRepository;
 
-    public List<AlbumDTO> findAll() {
+    public List<AlbumResponse> findAll() {
         final List<Album> albums = albumRepository.findAll(Sort.by("id"));
         return albums.stream()
-                .map(album -> mapToDTO(album, new AlbumDTO()))
+                .map(album -> mapToResponse(album, new AlbumResponse()))
                 .toList();
     }
 
-    public AlbumDTO get(final Long id) {
+    public AlbumResponse get(final Long id) {
         return albumRepository.findById(id)
-                .map(album -> mapToDTO(album, new AlbumDTO()))
+                .map(album -> mapToResponse(album, new AlbumResponse()))
                 .orElseThrow(AlbumNotFoundException::new);
     }
 
-    public Long create(final AlbumDTO albumDTO) {
-        User artist = userRepository.findByName(albumDTO.getArtist());
+    public Long create(final AlbumRequest albumRequest) {
+        User artist = userRepository.findByName(albumRequest.getArtist());
         if (artist == null) {
             log.error("User not found");
             throw new UserNotFoundException("User not found");
         }
         final Album album = new Album();
-        mapToEntity(albumDTO, album, artist);
+        mapToEntity(albumRequest, album, artist);
         return albumRepository.save(album).getId();
     }
 
     @Transactional
-    public void update(final Long id, final AlbumDTO albumDTO) {
+    public void update(final Long id, final AlbumRequest albumRequest) {
         final Album album = albumRepository.findById(id)
                 .orElseThrow(AlbumNotFoundException::new);
-        album.setTitle(albumDTO.getTitle());
+        album.setTitle(albumRequest.getTitle());
         log.info("Album with id {} was successfully updated", id);
         albumRepository.save(album);
     }
@@ -64,17 +65,17 @@ public class AlbumService {
         log.info("Album with id {} was successfully deleted", id);
     }
 
-    private AlbumDTO mapToDTO(final Album album, final AlbumDTO albumDTO) {
-        albumDTO.setId(album.getId());
-        albumDTO.setTitle(album.getTitle());
-        albumDTO.setArtist(album.getUser().getAccountName());
-        albumDTO.setSongs(songRepository.findAllByAlbum(album).stream().toList());
-        return albumDTO;
+    private AlbumResponse mapToResponse(final Album album, final AlbumResponse albumResponse) {
+        albumResponse.setId(album.getId());
+        albumResponse.setTitle(album.getTitle());
+        albumResponse.setArtist(album.getUser().getUsername());
+        albumResponse.setSongs(songRepository.findAllByAlbum(album).stream().toList());
+        return albumResponse;
     }
 
-    private Album mapToEntity(final AlbumDTO albumDTO, final Album album, final User artist) {
-        album.setId(albumDTO.getId());
-        album.setTitle(albumDTO.getTitle());
+    private Album mapToEntity(final AlbumRequest albumRequest, final Album album, final User artist) {
+        album.setId(albumRequest.getId());
+        album.setTitle(albumRequest.getTitle());
         album.setUser(artist);
         return album;
     }

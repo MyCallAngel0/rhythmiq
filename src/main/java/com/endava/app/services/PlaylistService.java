@@ -3,7 +3,8 @@ package com.endava.app.services;
 import com.endava.app.domain.Playlist;
 import com.endava.app.domain.Song;
 import com.endava.app.domain.User;
-import com.endava.app.model.PlaylistDTO;
+import com.endava.app.model.request.PlaylistRequest;
+import com.endava.app.model.response.PlaylistResponse;
 import com.endava.app.repos.PlaylistRepository;
 import com.endava.app.repos.SongRepository;
 import com.endava.app.repos.UserRepository;
@@ -29,36 +30,43 @@ public class PlaylistService {
     private final SongRepository songRepository;
     private final UserRepository userRepository;
 
-    public List<PlaylistDTO> findAll() {
+    public List<PlaylistResponse> findAll() {
         final List<Playlist> playlists = playlistRepository.findAll(Sort.by("id"));
         return playlists.stream()
-                .map(album -> mapToDTO(album, new PlaylistDTO()))
+                .map(playlist -> mapToResponse(playlist, new PlaylistResponse()))
                 .toList();
     }
 
-    public PlaylistDTO get(Long id) {
+    public PlaylistResponse get(Long id) {
         return playlistRepository.findById(id)
-                .map(playlist -> mapToDTO(playlist, new PlaylistDTO()))
+                .map(playlist -> mapToResponse(playlist, new PlaylistResponse()))
                 .orElseThrow(() -> new PlaylistNotFoundException("Playlist not found with id: " + id));
     }
 
-    public Long create(final PlaylistDTO playlistDTO) {
-        User user = userRepository.findByName(playlistDTO.getUser());
+    public List<PlaylistResponse> getByUsername(String username) {
+        final List<Playlist> playlists = playlistRepository.findAllByUser(username);
+        return playlists.stream()
+                .map(playlist -> mapToResponse(playlist, new PlaylistResponse()))
+                .toList();
+    }
+
+    public Long create(final PlaylistRequest playlistRequest) {
+        log.info(playlistRequest.getUser() + playlistRequest.getTitle());
+        User user = userRepository.findByName(playlistRequest.getUser());
         if (user == null) {
             log.error("User not found");
             throw new UserNotFoundException("User not found");
         }
         final Playlist playlist = new Playlist();
-        mapToEntity(playlistDTO, playlist, user);
+        mapToEntity(playlistRequest, playlist, user);
         return playlistRepository.save(playlist).getId();
     }
 
-    public void update(Long id, final PlaylistDTO playlistDTO) {
+    public void update(Long id, final PlaylistRequest playlistRequest) {
         final Playlist playlist = playlistRepository.findById(id)
                 .orElseThrow(() -> new PlaylistNotFoundException("Playlist not found with id: " + id));
-        playlist.setTitle(playlistDTO.getTitle());
+        playlist.setTitle(playlistRequest.getTitle());
         log.info("Playlist with id {} was successfully updated", id);
-        // Обновите поля playlist согласно playlistDetails
         playlistRepository.save(playlist);
     }
 
@@ -67,7 +75,6 @@ public class PlaylistService {
         log.info("Playlist with id {} was successfully deleted", id);
     }
 
-    //TODO : Add songs to playlist fix
     @Transactional
     public void addSongs(Long playlistId, List<Long> songIds) {
         var playlist = playlistRepository.findById(playlistId)
@@ -91,17 +98,16 @@ public class PlaylistService {
         playlistRepository.save(playlist);
     }
 
-    private PlaylistDTO mapToDTO(final Playlist playlist, final PlaylistDTO playlistDTO) {
-        playlistDTO.setId(playlist.getId());
-        playlistDTO.setTitle(playlist.getTitle());
-        playlistDTO.setUser(playlist.getUser().getAccountName());
-        playlistDTO.setSongs(playlist.getSongs().stream().map(Song::getTitle).toList());
-        return playlistDTO;
+    private PlaylistResponse mapToResponse(final Playlist playlist, final PlaylistResponse playlistResponse) {
+        playlistResponse.setId(playlist.getId());
+        playlistResponse.setTitle(playlist.getTitle());
+        playlistResponse.setUser(playlist.getUser().getUsername());
+        playlistResponse.setSongs(playlist.getSongs().stream().toList());
+        return playlistResponse;
     }
 
-    private Playlist mapToEntity(final PlaylistDTO playlistDTO, final Playlist playlist, final User artist) {
-        playlist.setId(playlistDTO.getId());
-        playlist.setTitle(playlistDTO.getTitle());
+    private Playlist mapToEntity(final PlaylistRequest playlistRequest, final Playlist playlist, final User artist) {
+        playlist.setTitle(playlistRequest.getTitle());
         playlist.setUser(artist);
         return playlist;
     }

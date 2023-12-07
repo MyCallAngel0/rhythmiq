@@ -16,7 +16,7 @@ public interface AlbumRepository extends JpaRepository<Album, Long> {
 
     Set<Album> getAlbumsByUser(User user);
 
-    @Query("SELECT a.title FROM Album a WHERE a.user = :user")
-    Set<String> getAlbumTitlesByUser(@Param("user") User user);
+    @Query("SELECT a FROM Album a WHERE a.user = :user")
+    List<Album> getAlbumByUser(@Param("user") User user);
 
 }

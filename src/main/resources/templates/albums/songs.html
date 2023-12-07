@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title th:text="${album.title}">Album Title</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content-container {
+            max-width: 800px;
+        }
+
+        header {
+            background-color: #1F1F1F;
+            color: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            background-color: #282828;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            color: white;
+        }
+
+        th {
+            background-color: #121212;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #222222;
+        }
+
+        .button-container {
+            text-align: right;
+        }
+
+        .modal {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #1F1F1F;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .close {
+            color: grey;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /*.form-content {
+            display: inline-list-item;
+        }*/
+
+        #openModalBtn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: slategray;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+
+        #openModalBtn::before,
+        #openModalBtn::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 5px;
+            background-color: #fff;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s, width 0.3s;
+        }
+
+        #openModalBtn::before {
+            left: -35px;
+        }
+
+        #openModalBtn::after {
+            right: -35px;
+        }
+
+        #openModalBtn:hover {
+            background-color: slategray;
+        }
+
+        #openModalBtn:hover::before,
+        #openModalBtn:hover::after {
+            width: 50px;
+        }
+
+        .form-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: row; /* Change to row to display label and input horizontally */
+            align-items: center; /* Align items vertically in the center */
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            margin-right: 10px; /* Add some spacing between label and input */
+        }
+    </style>
+    <link rel="stylesheet" th:href="@{/assets/css/playlistModal.css}">
+    <script th:src="@{/assets/js/JWTdecoder.js}"></script>
+</head>
+<body>
+<div layout:fragment="content" class="content-container">
+<div style="position: absolute; top: 10px; left: 10px;">
+    <a href="javascript:history.back()" style="text-decoration: none; color: lightgray;">&lt; Back</a>
+</div>
+<header>
+    <h1 th:text="${album.title}">Album Title</h1>
+</header>
+    <table>
+        <thead>
+        <tr>
+            <th>Song Title</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Iterate over songs and display them -->
+        <tr th:each="song, iterStat : ${album.songs}" th:class="${iterStat.odd} ? 'odd' : 'even'">
+            <td th:text="${song.title}">Song Title</td>
+            <td class="button-container">
+                <div class="user-form">
+                    <form th:action="@{/song/edit/{id}(id=${song.id})}"
+                          th:data-confirm-message="'Song updated'" method="post" class="js-submit-confirm d-inline">
+                        <button th:href="@{/song/edit/{id}(id=${song.id})}" th:text="'Edit song'" class="btn btn-sm btn-secondary" />
+                    </form>
+                    <form th:action="@{/song/delete/{id}(id=${song.id})}"
+                          th:data-confirm-message="'Song deleted'" method="post" class="js-submit-confirm d-inline">
+                        <button th:text="'Delete song'" type="submit" class="btn btn-sm btn-secondary" />
+                    </form>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <script th:inline="javascript">
+        checkCredentials();
+        async function checkCredentials() {
+            try {
+                console.info("here");
+                const user = await getJWTSub();
+            } catch (error) {
+                document.querySelectorAll('.user-form').forEach(element => {
+                    element.hidden = true;
+                });
+                console.error(error);
+            }
+        }
+    </script>
+    <div>
+        <a style="cursor: pointer" id="openModalBtn" class="btn btn-primary ms-2"><span>Add song</span></a>
+    </div>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <h2>Add Song</h2>
+        <div class="form-content">
+            <form id="songForm">
+                <div class="input-group">
+                    <label for="songTitle">Song Title:</label>
+                    <input type="text" id="songTitle" required>
+                </div>
+                <div class="input-group">
+                    <label for="songFile">Song File:</label>
+                    <input type="file" id="songFile" required>
+                </div>
+                <button style="cursor: pointer" type="submit">Add Song</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", async function () {
+            const artist = await getJWTSub();
+            try {
+
+                if (artist !== null) {
+                    const openModalBtn = document.getElementById("openModalBtn");
+                    const modal = document.getElementById("modal");
+                    const closeModalBtn = document.getElementById("closeModalBtn");
+                    const songForm = document.getElementById("songForm");
+
+                    openModalBtn.addEventListener("click", function () {
+                        modal.style.display = "block";
+                    });
+
+                    closeModalBtn.addEventListener("click", function () {
+                        modal.style.display = "none";
+                    });
+
+                    window.addEventListener("click", function (event) {
+                        if (event.target === modal) {
+                            modal.style.display = "none";
+                        }
+                    });
+
+                    songForm.addEventListener("submit", function (event) {
+                        event.preventDefault();
+
+                        const title = document.getElementById("songTitle");
+                        const file = document.getElementById("songFile");
+
+                        const id = getParameterByName('id');
+
+                        const formData = new FormData();
+                        formData.append("title", title.value);
+                        formData.append("mp3File", file.files[0]);
+                        formData.append("artist", artist);
+                        formData.append("album", id);
+
+
+                        // Perform the logic to create the playlist (replace this with your actual logic)
+                        console.log("Creating Song with title:", title.value);
+
+                        fetch('http://localhost:8080/song/add', {
+                            method: 'POST',
+                            body: formData,
+                        })
+                            .then(response => response.text())
+                            .then(data => {
+                                console.log('Success:', data);
+                            })
+                            .catch((error) => {
+                                console.error('Error:', error);
+                            });
+
+                        modal.style.display = "none";
+                    });
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        });
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+    </script>
+</div>
+</body>
+</html>

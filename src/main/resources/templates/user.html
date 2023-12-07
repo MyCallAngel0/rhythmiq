@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
+            background-color: #1DB954;
+            color: #1F1F1F;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-top: 20px;
+        }
+
+        .profile-info {
+            padding: 20px;
+            text-align: left;
+            background-color: #1F1F1F;
+        }
+
+        .profile-info h2 {
+            color: darkgray;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .profile-info p {
+            color: darkgray;
+            margin-bottom: 20px;
+        }
+
+        .profile-info a {
+            color: darkgray;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .profile-info a:hover {
+            text-decoration: underline;
+        }
+
+        .album-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            background-color: #222222;
+        }
+
+        .album-item {
+            width: 250px; /* Set the width as needed */
+            height: 250px;
+            max-height: 250px;
+            margin-right: 10px;
+            background-color: beige;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column; /* Stack child elements vertically */
+        }
+
+        .album-item:hover {
+            transform: scale(1.05);
+        }
+
+        .album-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+
+        .album-item p {
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="profile-header">
+        <a href="#" class="back-button" onclick="history.go(-1); return false;">&lt; Back</a>
+        <img src="https://www.amaraventures.in/assets/uploads/testimonial/user.png" alt="User Photo"/>
+    </div>
+
+    <div class="profile-info">
+        <h2 th:text="${user.firstname + ' ' + user.lastname}"></h2>
+        <p class="left-align"><strong>Email:</strong> <span th:text="${user.email}" color="lightgray"></span></p>
+        <p class="left-align"><strong>Date of Birth:</strong> <span th:text="${user.dob}" color="lightgray"></span></p>
+    </div>
+    <ul class="album-list">
+        <th:block th:each="album : ${user.albums}">
+            <li class="album-item">
+                <img src="https://admindagency.com/wp-content/uploads/2023/05/Most-Iconic-Album-Cover-Designs-nr6_Mayhem_HERO.png" alt="${album.name}"/>
+                <p th:text="${album.title}"></p>
+            </li>
+        </th:block>
+    </ul>
+</div>
+</body>
+</html>
