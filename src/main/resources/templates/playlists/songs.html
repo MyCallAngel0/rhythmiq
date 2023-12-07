@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
 <head>
     <title th:text="${playlist.title}">Playlist Title</title>
     <style>
@@ -46,7 +47,55 @@
             background-color: #222222;
         }
 
+        .buttons {
+            display: inline-flex;
+        }
+
+        #deleteButton, #editButton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: slategray;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+
+        #deleteButton::before, #editButton::before,
+        #deleteButton::after, #editButton::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 5px;
+            background-color: #fff;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s, width 0.3s;
+        }
+
+        #deleteButton::before, #editButton::before {
+            left: -35px;
+        }
+
+        #deleteButton::after, #editButton::after {
+            right: -35px;
+        }
+
+        #deleteButton:hover, #editButton:hover {
+            background-color: slategray;
+        }
+
+        #deleteButton:hover::before, #editButton:hover::before,
+        #deleteButton:hover::before, #editButton:hover::after {
+            width: 50px;
+        }
     </style>
+    <script th:src="@{/assets/js/JWTdecoder.js}"></script>
+    <link rel="stylesheet" href="/assets/css/playlistModal.css">
 </head>
 <body>
 <div style="position: absolute; top: 10px; left: 10px;">
@@ -69,5 +118,81 @@
     </tr>
     </tbody>
 </table>
+<div class="buttons">
+    <form th:action="@{/playlist/delete/{id}(id=${playlist.id})}"
+          th:data-confirm-message="'Playlist deleted'" method="post" class="js-submit-confirm d-inline">
+        <button type="submit" style="cursor: pointer" id="deleteButton"><span>Delete playlist</span></button>
+    </form>
+
+    <a th:value="${playlist.id}" id="editButton" style="text-decoration: none; cursor: pointer; margin-left: 10px">
+        <span>Edit Playlist</span>
+    </a>
+</div>
+<div id="modal-edit" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn-edit">&times;</span>
+        <h2>Edit Playlist</h2>
+        <form id="playlistForm-edit">
+            <label for="playlistTitle-edit">Playlist Title:</label>
+            <input type="text" id="playlistTitle-edit" required>
+            <button type="submit">Update Playlist</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", async function () {
+            const artist = await getJWTSub();
+            try {
+
+                if (artist !== null) {
+                    const openModalBtnEdit = document.getElementById("editButton");
+                    const modalEdit = document.getElementById("modal-edit");
+                    const closeModalBtnEdit = document.getElementById("closeModalBtn-edit");
+                    const playlistFormEdit = document.getElementById("playlistForm-edit");
+                    const id = openModalBtnEdit.getAttribute("value");
+
+                    openModalBtnEdit.addEventListener("click", function () {
+                        modalEdit.style.display = "block";
+                    });
+
+                    closeModalBtnEdit.addEventListener("click", function () {
+                        modalEdit.style.display = "none";
+                    });
+
+                    window.addEventListener("click", function (event) {
+                        if (event.target === modalEdit) {
+                            modalEdit.style.display = "none";
+                        }
+                    });
+
+                    playlistFormEdit.addEventListener("submit", function (event) {
+                        event.preventDefault();
+
+                        const title = document.getElementById("playlistTitle-edit").value;
+
+                        console.log("Updating Playlist with title:", title);
+
+                        fetch('http://localhost:8080/playlist/edit/' + id, {
+                            method: 'PUT',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({title}),
+                        })
+                            .then(response => response.text())
+                            .then(data => {
+                                console.log('Success:', JSON.stringify({title}));
+                            })
+                            .catch((error) => {
+                                console.error('Error:', error);
+                            });
+                        modalEdit.style.display = "none";
+                    });
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    </script>
+</div>
 </body>
 </html>

@@ -70,7 +70,7 @@ public class PlaylistController {
             throw new RuntimeException(e);
         }
     }
-    @PostMapping(path="/add/songs/{playlist_id}")
+    @PostMapping(path="playlist/add/songs/{playlist_id}")
     public ResponseEntity<String> addSongsToPlaylist(@PathVariable(name="playlist_id") Long playlistId, @RequestBody final PlaylistSongs songIds) {
         try {
             log.info("Adding songs to playlist with id {}", playlistId);
@@ -82,7 +82,7 @@ public class PlaylistController {
         }
     }
 
-    @PutMapping(path= "/{playlist_id}")
+    @PutMapping(path= "playlist/edit/{playlist_id}")
     public ResponseEntity<String> update(@PathVariable(name= "playlist_id") Long playlistId, @RequestBody final PlaylistRequest playlistRequest) {
         try {
             log.info("Updating playlist with id {}", playlistId);
@@ -94,15 +94,15 @@ public class PlaylistController {
         }
     }
 
-    @DeleteMapping(path= "/{playlist_id}")
-    public ResponseEntity<String> delete(@PathVariable(name= "playlist_id") Long playlistId) {
+    @PostMapping(path= "playlist/delete/{playlist_id}")
+    public String delete(@PathVariable(name= "playlist_id") Long playlistId) {
         try {
             log.info("Deleting playlist with id {}", playlistId);
             playlistService.delete(playlistId);
-            return ResponseEntity.ok("Playlist deleted");
+            return "redirect:/";
         } catch (Exception e) {
             log.error(e.getMessage());
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+            return "error";
         }
     }
     @Data

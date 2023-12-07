@@ -143,10 +143,7 @@
                 <td class="artist-name" th:text="${album.artist}" />
                 <td class="button-container">
                     <div class="user-form">
-                        <form th:action="@{/albums/delete/{id}(id=${album.id})}"
-                              th:data-confirm-message="'Album deleted'" method="post" class="js-submit-confirm d-inline">
-                            <button th:href="@{/albums/edit/{id}(id=${album.id})}" th:text="'Edit album'" class="btn btn-sm btn-secondary" />
-                        </form>
+                            <button th:value="${album.id}" id="openModalBtn-edit" th:text="'Edit album'" class="btn btn-sm btn-secondary" />
                         <form th:action="@{/albums/delete/{id}(id=${album.id})}"
                               th:data-confirm-message="'Album deleted'" method="post" class="js-submit-confirm d-inline">
                             <button th:text="'Delete album'" type="submit" class="btn btn-sm btn-secondary" />
@@ -161,7 +158,6 @@
         checkCredentials();
         async function checkCredentials() {
             try {
-                console.info("here");
                 const user = await getJWTSub();
                 var rows = document.querySelectorAll('table tr');
                 rows.forEach(function(row) {
@@ -243,6 +239,72 @@
                                 console.error('Error:', error);
                             });
                         modal.style.display = "none";
+                    });
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    </script>
+</div>
+<div id="modal-edit" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn-edit">&times;</span>
+        <h2>Edit Album</h2>
+        <form id="albumForm-edit">
+            <label for="albumTitle-edit">Album Title:</label>
+            <input type="text" id="albumTitle-edit" required>
+            <button type="submit">Update Album</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", async function () {
+            const artist = await getJWTSub();
+            try {
+
+                if (artist !== null) {
+                    const openModalBtnEdit = document.getElementById("openModalBtn-edit");
+                    const modalEdit = document.getElementById("modal-edit");
+                    const closeModalBtnEdit = document.getElementById("closeModalBtn-edit");
+                    const albumFormEdit = document.getElementById("albumForm-edit");
+                    const id = openModalBtnEdit.value;
+
+                    openModalBtnEdit.addEventListener("click", function () {
+                        modalEdit.style.display = "block";
+                    });
+
+                    closeModalBtnEdit.addEventListener("click", function () {
+                        modalEdit.style.display = "none";
+                    });
+
+                    window.addEventListener("click", function (event) {
+                        if (event.target === modalEdit) {
+                            modalEdit.style.display = "none";
+                        }
+                    });
+
+                    albumFormEdit.addEventListener("submit", function (event) {
+                        event.preventDefault();
+
+                        const title = document.getElementById("albumTitle-edit").value;
+
+                        console.log("Creating Album with title:", title);
+
+                        fetch('http://localhost:8080/album/edit/' + id, {
+                            method: 'PUT',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({title}),
+                        })
+                            .then(response => response.text())
+                            .then(data => {
+                                console.log('Success:', JSON.stringify({title}));
+                            })
+                            .catch((error) => {
+                                console.error('Error:', error);
+                            });
+                        modalEdit.style.display = "none";
                     });
                 }
             } catch (error) {

@@ -1,11 +1,10 @@
-fetchPlaylists()
+export const playlists = fetchPlaylists()
     .then(playlists => {
         // Check if songs is an object
         if (typeof playlists !== 'object' || playlists === null) {
             console.error('Error: playlists is not an object.');
             return;
         }
-
         appendToList(playlists);
     })
     .catch(error => {
@@ -40,3 +39,17 @@ function appendToList(playlists) {
         playlistContainer.appendChild(listItem);
     });
 }
+
+/*
+appendToPlaylist(playlists);
+function appendToPlaylist(playlists) {
+    console.log("here");
+    const selectElement = document.getElementById("playlistSelect");
+
+    playlists.forEach(function(playlist) {
+        const option = document.createElement("option");
+        option.value = playlist.title.toLowerCase();
+        option.textContent = playlist.title;
+        selectElement.appendChild(option);
+    });
+}*/

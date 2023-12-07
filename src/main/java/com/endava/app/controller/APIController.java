@@ -6,6 +6,7 @@ import com.endava.app.services.PlaylistService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -42,13 +43,15 @@ public class APIController {
     }
 
     @GetMapping("/{filepath}")
-    public ResponseEntity<byte[]> getMp3File(@PathVariable(name = "filepath") String filepath) throws IOException {
+    public ResponseEntity<Resource> getMp3File(@PathVariable(name = "filepath") String filepath) throws IOException {
         Resource mp3Resource = new ClassPathResource(filepath);
 
-        byte[] mp3Data = Files.readAllBytes(mp3Resource.getFile().toPath());
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.parseMediaType("audio/mp3"));
+        headers.setContentLength(mp3Resource.contentLength());
+        headers.setContentDispositionFormData("attachment", mp3Resource.getFilename());
 
-        return new ResponseEntity<>(mp3Data, headers, HttpStatus.OK);
+        return new ResponseEntity<>(new InputStreamResource(mp3Resource.getInputStream()), headers, HttpStatus.OK);
     }
+
 }

@@ -90,6 +90,28 @@ function populateTable(songs) {
 
         actionCell.appendChild(dropdown);
     }
+    fetchSongFile(songs[0].mp3FilePath);
+}
+async function fetchSongFile(filepath) {
+    fetch('http://localhost:8080'+ filepath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.blob();
+        })
+        .then(blob => {
+            const url = URL.createObjectURL(blob);
+            // Now 'url' contains a URL that you can use to play the MP3 file or perform other operations
+            console.log('File successfully fetched:', url);
+
+            // Example: Play the audio using an HTML audio element
+            const audio = new Audio(url);
+            audio.play();
+        })
+        .catch(error => {
+            console.error('Error fetching the file:', error);
+        });
 }
 
 // Function to close the popup and overlay
@@ -107,7 +129,7 @@ function playSong(index) {
         currentSongIndex = index;
         const song = songs[currentSongIndex];
         console.log('Playing song:', song.mp3FilePath);
-        var audiopath = new Audio(song.mp3FilePath)
+        var audiopath = fetchSongFile(song.mp3FilePath);
         //audioSource.src =  audio;
         audio.load();
         audio.play();

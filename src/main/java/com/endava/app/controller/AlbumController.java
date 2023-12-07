@@ -52,7 +52,7 @@ public class AlbumController {
         }
     }
 
-    @PutMapping(path= "albums/{album_id}")
+    @PutMapping(path= "album/edit/{album_id}")
     public ResponseEntity<String> update(@PathVariable(name= "album_id") Long albumId, @RequestBody final AlbumRequest albumRequest) {
         try {
             log.info("Updating album with id {}", albumId);

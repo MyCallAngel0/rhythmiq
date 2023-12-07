@@ -89,9 +89,6 @@
             text-decoration: none;
             cursor: pointer;
         }
-        /*.form-content {
-            display: inline-list-item;
-        }*/
 
         #openModalBtn {
             display: inline-block;
@@ -143,8 +140,8 @@
 
         .input-group {
             display: flex;
-            flex-direction: row; /* Change to row to display label and input horizontally */
-            align-items: center; /* Align items vertically in the center */
+            flex-direction: row;
+            align-items: center;
             margin-bottom: 15px;
         }
 
@@ -156,17 +153,18 @@
     <script th:src="@{/assets/js/JWTdecoder.js}"></script>
 </head>
 <body>
+<header>
+    <h1 th:text="${album.title}">Album Title</h1>
+</header>
 <div layout:fragment="content" class="content-container">
 <div style="position: absolute; top: 10px; left: 10px;">
     <a href="javascript:history.back()" style="text-decoration: none; color: lightgray;">&lt; Back</a>
 </div>
-<header>
-    <h1 th:text="${album.title}">Album Title</h1>
-</header>
     <table>
         <thead>
         <tr>
             <th>Song Title</th>
+            <th>Artist</th>
             <th></th>
         </tr>
         </thead>
@@ -174,12 +172,10 @@
         <!-- Iterate over songs and display them -->
         <tr th:each="song, iterStat : ${album.songs}" th:class="${iterStat.odd} ? 'odd' : 'even'">
             <td th:text="${song.title}">Song Title</td>
+            <td th:text="${song.artist.username}">Artist</td>
             <td class="button-container">
                 <div class="user-form">
-                    <form th:action="@{/song/edit/{id}(id=${song.id})}"
-                          th:data-confirm-message="'Song updated'" method="post" class="js-submit-confirm d-inline">
-                        <button th:href="@{/song/edit/{id}(id=${song.id})}" th:text="'Edit song'" class="btn btn-sm btn-secondary" />
-                    </form>
+                    <button th:value="${song.id}" id="openModalBtn-edit" th:text="'Edit song'" class="btn btn-sm btn-secondary" />
                     <form th:action="@{/song/delete/{id}(id=${song.id})}"
                           th:data-confirm-message="'Song deleted'" method="post" class="js-submit-confirm d-inline">
                         <button th:text="'Delete song'" type="submit" class="btn btn-sm btn-secondary" />
@@ -195,6 +191,17 @@
             try {
                 console.info("here");
                 const user = await getJWTSub();
+                var rows = document.querySelectorAll('table tr');
+                rows.forEach(function(row) {
+                    var artist = row.cells[1].textContent;
+                    console.log("Artist",  artist);
+                    console.log("User", user);
+                    if (artist !== user) {
+                        Array.from(row.getElementsByClassName('user-form')).forEach(element => element.hidden = true)
+                    } else {
+                        Array.from(row.getElementsByClassName('user-form')).forEach(element => element.hidden = false);
+                    }
+                });
             } catch (error) {
                 document.querySelectorAll('.user-form').forEach(element => {
                     element.hidden = true;
@@ -297,6 +304,72 @@
             return decodeURIComponent(results[2].replace(/\+/g, " "));
         }
 
+    </script>
+</div>
+<div id="modal-edit" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn-edit">&times;</span>
+        <h2>Edit Song</h2>
+        <form id="songForm-edit">
+            <label for="songTitle-edit">Song Title:</label>
+            <input type="text" id="songTitle-edit" required>
+            <button type="submit">Update Song</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", async function () {
+            const artist = await getJWTSub();
+            try {
+
+                if (artist !== null) {
+                    const openModalBtnEdit = document.getElementById("openModalBtn-edit");
+                    const modalEdit = document.getElementById("modal-edit");
+                    const closeModalBtnEdit = document.getElementById("closeModalBtn-edit");
+                    const songFormEdit = document.getElementById("songForm-edit");
+                    const id = openModalBtnEdit.value;
+
+                    openModalBtnEdit.addEventListener("click", function () {
+                        modalEdit.style.display = "block";
+                    });
+
+                    closeModalBtnEdit.addEventListener("click", function () {
+                        modalEdit.style.display = "none";
+                    });
+
+                    window.addEventListener("click", function (event) {
+                        if (event.target === modalEdit) {
+                            modalEdit.style.display = "none";
+                        }
+                    });
+
+                    songFormEdit.addEventListener("submit", function (event) {
+                        event.preventDefault();
+
+                        const title = document.getElementById("songTitle-edit").value;
+
+                        console.log("Updating song with title:", title);
+
+                        fetch('http://localhost:8080/song/edit/' + id, {
+                            method: 'PUT',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({title}),
+                        })
+                            .then(response => response.text())
+                            .then(data => {
+                                console.log('Success:', JSON.stringify({title}));
+                            })
+                            .catch((error) => {
+                                console.error('Error:', error);
+                            });
+                        modalEdit.style.display = "none";
+                    });
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        });
     </script>
 </div>
 </body>

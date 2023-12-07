@@ -3391,3 +3391,1612 @@
 10:08:42.348 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
 10:08:42.356 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
 10:08:42.357 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user RickAstley09
+10:22:07.223 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21528 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:22:07.223 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:22:07.223 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:22:10.091 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:22:10.765 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.877 seconds (process running for 4.461)
+10:22:13.303 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+10:22:13.371 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:22:13.382 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:22:13.392 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:22:13.399 [http-nio-8080-exec-2] INFO  c.e.app.controller.APIController - Getting playlists from user RickAstley09
+10:22:13.402 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:22:14.886 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:22:14.900 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:22:14.909 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:22:20.087 [http-nio-8080-exec-4] INFO  c.e.app.controller.AlbumController - Getting song with id 152
+10:22:20.124 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:22:20.131 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:22:20.140 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:23:18.570 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 1132 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:23:18.570 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:23:18.571 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:23:21.521 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:23:22.087 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.796 seconds (process running for 4.373)
+10:23:24.280 [http-nio-8080-exec-1] INFO  c.e.app.controller.AlbumController - Getting song with id 152
+10:23:42.672 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 20872 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:23:42.672 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:23:42.673 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:23:45.552 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:23:46.156 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.756 seconds (process running for 4.336)
+10:23:47.920 [http-nio-8080-exec-1] INFO  c.e.app.controller.AlbumController - Getting song with id 152
+10:24:24.959 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22432 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:24:24.959 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:24:24.960 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:24:27.841 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:24:28.403 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.727 seconds (process running for 4.297)
+10:24:29.699 [http-nio-8080-exec-1] INFO  c.e.app.controller.AlbumController - Getting song with id 152
+10:24:48.090 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+10:24:56.743 [http-nio-8080-exec-2] INFO  c.e.a.c.AuthenticationController - User RickAstley09 successfully logged!
+10:24:56.779 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+10:24:56.785 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:24:56.797 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:24:56.807 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:24:56.810 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user RickAstley09
+10:24:56.817 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:25:03.313 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:25:03.323 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:25:03.331 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:25:06.149 [http-nio-8080-exec-2] INFO  c.e.app.controller.AlbumController - Getting song with id 152
+10:25:06.179 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:25:06.189 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:25:06.197 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:25:58.340 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23924 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:25:58.340 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:25:58.340 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:26:01.313 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:26:01.870 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.8 seconds (process running for 4.379)
+10:26:03.542 [http-nio-8080-exec-1] INFO  c.e.app.controller.AlbumController - Getting song with id 152
+10:26:03.944 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:26:03.954 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:26:03.961 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:26:05.713 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:26:05.720 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:26:05.726 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:26:06.196 [http-nio-8080-exec-10] INFO  c.e.app.controller.SongController - Getting all songs
+10:26:06.199 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:26:06.222 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:26:06.231 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:26:06.240 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user RickAstley09
+10:26:06.258 [http-nio-8080-exec-6] INFO  c.e.app.controller.APIController - Getting playlists from user RickAstley09
+10:26:11.256 [http-nio-8080-exec-4] INFO  c.e.a.c.AuthenticationController - User MyCallAngel0 successfully logged!
+10:26:11.294 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+10:26:11.297 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:11.310 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:11.322 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:11.323 [http-nio-8080-exec-8] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:26:11.332 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:13.186 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:13.194 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:13.201 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:16.300 [http-nio-8080-exec-4] INFO  c.e.app.controller.AlbumController - Getting song with id 152
+10:26:16.334 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:16.342 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:16.350 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:25.711 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:25.717 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:25.723 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:38.582 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+10:26:38.584 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:38.607 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:38.613 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:38.621 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:26:38.625 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:36:18.456 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 19528 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:36:18.456 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:36:18.457 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:36:21.362 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:36:21.918 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.732 seconds (process running for 4.249)
+10:36:25.191 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:25.206 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:25.213 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:25.220 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:27.573 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:27.582 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:27.590 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:27.597 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:28.616 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:28.626 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:28.633 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:28.639 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.199 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.207 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.214 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.220 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.694 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.702 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.711 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.719 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.916 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.924 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.931 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:29.937 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.136 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.144 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.151 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.158 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.398 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.404 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.411 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.416 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.938 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.944 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.949 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:30.954 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.385 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.392 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.399 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.404 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.640 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.645 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.651 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.660 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.859 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.865 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.872 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:31.878 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:32.144 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:32.152 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:32.159 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:32.165 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:46.062 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:46.067 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:46.074 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:46.079 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:47.942 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:47.948 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:47.955 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:47.960 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:55.573 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:55.583 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:55.588 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:55.595 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:58.966 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:58.973 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:58.979 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:36:58.986 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:00.465 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:00.474 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:00.478 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:00.483 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:00.922 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:00.929 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:00.934 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:00.940 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.116 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.122 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.126 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.130 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.339 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.344 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.349 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.354 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.766 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.773 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.779 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.783 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.981 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.986 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.991 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:01.996 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.270 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.276 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.281 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.285 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.490 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.496 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.500 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.504 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.725 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.730 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.735 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.740 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.932 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.936 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.941 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:02.946 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.290 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.295 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.300 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.304 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.558 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.563 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.568 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.572 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.785 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.790 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.795 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:03.798 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:04.013 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+10:37:04.015 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:04.035 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:04.040 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:04.047 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:04.086 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:37:05.631 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:05.637 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:05.643 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:05.648 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:07.083 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:07.088 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:07.093 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:07.100 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:37:52.714 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22972 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:37:52.714 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:37:52.715 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:37:55.667 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:37:56.246 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.817 seconds (process running for 4.389)
+10:38:01.042 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:01.053 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:01.060 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:01.067 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:01.808 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:01.817 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:01.824 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:01.831 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:02.713 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:02.721 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:02.729 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:38:02.735 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:10.018 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21716 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:40:10.019 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:40:10.019 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:40:12.966 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:40:13.534 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.831 seconds (process running for 4.442)
+10:40:16.334 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:16.347 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:16.354 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:16.360 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:18.137 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:18.147 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:18.155 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:18.161 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:19.147 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:19.155 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:19.162 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:19.167 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:19.754 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:19.762 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:19.770 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:19.776 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.187 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.194 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.202 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.207 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.418 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.425 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.432 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.439 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.649 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.655 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.663 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.671 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.900 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.907 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.914 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:20.919 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.162 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.169 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.176 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.182 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.382 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.390 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.397 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.404 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.593 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.600 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.608 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.615 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.818 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.824 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.830 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:21.835 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.028 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.036 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.048 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.053 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.243 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.249 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.257 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.262 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.467 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.475 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.483 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.491 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.667 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.673 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.680 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.685 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.875 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.881 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.887 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:22.892 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:23.071 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:23.079 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:23.086 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:23.092 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:23.577 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:23.584 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:23.591 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:40:23.598 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:06.097 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 10340 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:41:06.097 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:41:06.098 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:41:09.277 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:41:09.915 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.098 seconds (process running for 4.678)
+10:41:30.826 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:30.836 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:30.843 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:30.849 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:32.008 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:32.019 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:32.027 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:32.033 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:32.738 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:32.747 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:32.755 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:32.761 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.080 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.088 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.096 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.102 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.282 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.289 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.296 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.303 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.468 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.477 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.484 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.490 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.649 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.657 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.665 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.670 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.835 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.842 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.849 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:33.855 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:34.175 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:34.181 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:34.188 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:34.194 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:34.710 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:34.717 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:34.723 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:34.728 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.043 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.050 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.055 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.060 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.414 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.420 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.427 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.432 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.747 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.752 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.760 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:35.765 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:36.321 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:36.327 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:36.334 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:36.340 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:37.185 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:37.191 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:37.197 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:37.203 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:38.157 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:38.162 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:38.168 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:41:38.173 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:42:02.156 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 10560 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:42:02.157 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:42:02.158 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:42:04.958 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:42:05.520 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.633 seconds (process running for 4.218)
+10:42:07.597 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:42:07.615 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:42:07.623 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:42:07.629 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:42:34.476 [http-nio-8080-exec-8] INFO  c.e.app.controller.AlbumController - Updating album with id 1
+10:42:34.483 [http-nio-8080-exec-8] INFO  c.endava.app.services.AlbumService - Album with id 1 was successfully updated
+10:42:36.347 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:42:36.356 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:42:36.365 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:42:36.374 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:43:10.977 [http-nio-8080-exec-4] INFO  c.e.app.controller.AlbumController - Getting song with id 1
+10:43:11.015 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:43:11.024 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:43:11.033 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:48:26.766 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23740 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:48:26.767 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:48:26.767 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:48:29.631 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:48:30.200 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.722 seconds (process running for 4.295)
+10:48:32.641 [http-nio-8080-exec-1] INFO  c.e.app.controller.AlbumController - Getting song with id 1
+10:48:33.055 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:48:33.067 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:48:33.074 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:48:33.080 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:48:45.385 [http-nio-8080-exec-9] INFO  c.e.app.controller.AlbumController - Getting song with id 1
+10:48:45.428 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:48:45.440 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:48:45.449 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:48:45.457 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:49:42.888 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22124 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:49:42.888 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:49:42.889 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:49:45.689 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:49:46.257 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.633 seconds (process running for 4.236)
+10:49:50.119 [http-nio-8080-exec-1] INFO  c.e.app.controller.AlbumController - Getting song with id 1
+10:49:50.522 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:49:50.535 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:49:50.542 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:49:50.557 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:49:53.231 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Updating song with id 1
+10:49:53.235 [http-nio-8080-exec-8] INFO  com.endava.app.services.SongService - Song with id 1 was updated
+10:49:54.528 [http-nio-8080-exec-10] INFO  c.e.app.controller.AlbumController - Getting song with id 1
+10:49:54.564 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:49:54.574 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:49:54.582 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:49:54.590 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:23.226 [http-nio-8080-exec-2] INFO  c.e.app.controller.SongController - Getting all songs
+10:50:28.690 [http-nio-8080-exec-6] INFO  c.e.app.controller.AlbumController - Getting song with id 1
+10:50:32.792 [http-nio-8080-exec-2] INFO  c.e.app.controller.SongController - Getting all songs
+10:50:39.103 [http-nio-8080-exec-3] INFO  c.e.a.c.AuthenticationController - User MyCallAngel0 successfully logged!
+10:50:39.136 [http-nio-8080-exec-10] INFO  c.e.app.controller.SongController - Getting all songs
+10:50:39.139 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:39.154 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:39.161 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:39.171 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:39.187 [http-nio-8080-exec-9] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:50:42.596 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:42.604 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:42.612 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:42.618 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:44.096 [http-nio-8080-exec-5] INFO  c.e.app.controller.AlbumController - Getting song with id 1
+10:50:44.125 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:44.134 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:44.140 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:44.145 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:46.689 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:46.698 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:46.703 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:46.708 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:47.078 [http-nio-8080-exec-9] INFO  c.e.app.controller.SongController - Getting all songs
+10:50:47.080 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:47.094 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:47.100 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:47.107 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:47.120 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:50:49.840 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:49.847 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:49.853 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:49.859 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:51.083 [http-nio-8080-exec-8] INFO  c.e.app.controller.AlbumController - Getting song with id 152
+10:50:51.110 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:51.116 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:51.122 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:51.128 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:52.644 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:52.649 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:52.654 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:52.660 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:52.862 [http-nio-8080-exec-1] INFO  c.e.app.controller.SongController - Getting all songs
+10:50:52.865 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:52.877 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:52.886 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:52.891 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:50:52.903 [http-nio-8080-exec-6] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:53:31.736 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22896 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:53:31.737 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:53:31.738 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:53:34.595 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:53:35.198 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.741 seconds (process running for 4.326)
+10:53:41.301 [http-nio-8080-exec-4] INFO  c.e.app.controller.SongController - Getting all songs
+10:53:41.389 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:53:41.397 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:53:41.404 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:53:41.411 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:53:41.412 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:54:45.857 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21684 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:54:45.858 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:54:45.858 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:54:48.712 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:54:49.334 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.748 seconds (process running for 4.345)
+10:54:52.738 [http-nio-8080-exec-10] INFO  c.e.app.controller.SongController - Getting all songs
+10:54:52.807 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:54:52.816 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:54:52.824 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:54:52.832 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:54:52.832 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:55:42.964 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 408 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:55:42.964 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:55:42.965 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:55:45.886 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:55:46.470 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.772 seconds (process running for 4.326)
+10:55:49.708 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+10:55:49.780 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:55:49.788 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:55:49.796 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:55:49.801 [http-nio-8080-exec-3] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:55:49.803 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:56:29.166 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 7604 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:56:29.167 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:56:29.167 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:56:31.970 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:56:32.532 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.615 seconds (process running for 4.157)
+10:56:35.357 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+10:56:35.436 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:56:35.445 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:56:35.456 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:56:35.465 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:56:35.467 [http-nio-8080-exec-6] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:59:38.586 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 18844 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+10:59:38.587 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+10:59:38.588 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+10:59:41.396 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+10:59:41.964 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.679 seconds (process running for 4.312)
+10:59:47.221 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+10:59:47.312 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:59:47.321 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:59:47.330 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+10:59:47.337 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+10:59:47.340 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:01:03.840 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23088 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:01:03.841 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:01:03.841 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:01:06.711 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:01:07.288 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.73 seconds (process running for 4.287)
+11:01:09.677 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:01:09.772 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:01:09.780 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:01:09.789 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:01:09.797 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:01:09.807 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:02:12.145 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 12964 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:02:12.145 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:02:12.146 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:02:14.974 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:02:15.541 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.679 seconds (process running for 4.232)
+11:02:19.064 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:02:19.148 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:02:19.156 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:02:19.166 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:02:19.180 [http-nio-8080-exec-6] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:02:19.180 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:03:02.064 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 16156 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:03:02.065 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:03:02.065 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:03:04.983 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:03:05.554 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.778 seconds (process running for 4.345)
+11:03:10.416 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+11:03:10.489 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:03:10.501 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:03:10.510 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:03:10.515 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:03:10.517 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:04:53.080 [http-nio-8080-exec-9] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+11:04:55.217 [http-nio-8080-exec-2] INFO  c.e.app.controller.SongController - Getting all songs
+11:04:55.221 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:04:55.243 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:04:55.254 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:04:55.266 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:04:55.281 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:05:43.491 [http-nio-8080-exec-4] INFO  c.e.app.controller.SongController - Getting all songs
+11:05:43.493 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:05:43.508 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:05:43.515 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:05:43.521 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:05:43.537 [http-nio-8080-exec-2] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:09:29.168 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 6112 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:09:29.169 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:09:29.169 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:09:33.099 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:09:33.958 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.211 seconds (process running for 6.043)
+11:09:40.148 [http-nio-8080-exec-2] INFO  c.e.app.controller.SongController - Getting all songs
+11:09:40.251 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:09:40.266 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:09:40.280 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:09:40.290 [http-nio-8080-exec-8] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:09:40.293 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:11:49.038 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22332 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:11:49.038 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:11:49.039 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:11:52.804 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:11:53.642 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.018 seconds (process running for 5.855)
+11:11:56.999 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:11:57.138 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:11:57.158 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:11:57.171 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:11:57.182 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:11:57.191 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:14:33.654 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21744 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:14:33.655 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:14:33.656 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:14:37.493 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:14:38.268 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.063 seconds (process running for 5.871)
+11:14:42.043 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:14:51.696 [http-nio-8080-exec-4] INFO  c.e.a.c.AuthenticationController - User MyCallAngel0 successfully logged!
+11:14:51.749 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:14:51.757 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:14:51.777 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:14:51.791 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:14:51.802 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:14:51.835 [http-nio-8080-exec-10] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:14:53.834 [http-nio-8080-exec-6] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+11:15:38.157 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 7692 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:15:38.158 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:15:38.159 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:15:41.870 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:15:42.587 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.907 seconds (process running for 5.731)
+11:15:44.335 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+11:17:30.063 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 14756 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:17:30.063 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:17:30.065 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:17:33.807 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:17:34.570 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.932 seconds (process running for 5.768)
+11:17:36.785 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+11:17:40.975 [http-nio-8080-exec-9] INFO  c.e.app.controller.SongController - Getting all songs
+11:17:41.093 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:17:41.104 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:17:41.124 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:17:41.127 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:17:41.136 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:18:10.826 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 24436 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:18:10.827 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:18:10.828 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:18:14.768 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:18:15.638 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.214 seconds (process running for 6.074)
+11:18:23.437 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+11:18:26.251 [http-nio-8080-exec-9] INFO  c.e.app.controller.SongController - Getting all songs
+11:18:26.351 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:18:26.367 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:18:26.383 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:18:26.385 [http-nio-8080-exec-3] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:18:26.395 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:18:41.360 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23316 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:18:41.361 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:18:41.362 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:18:45.145 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:18:45.935 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.022 seconds (process running for 5.848)
+11:18:49.664 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+11:18:54.105 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+11:18:54.232 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:18:54.246 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:18:54.259 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:18:54.263 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:18:54.274 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:19:19.094 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 4232 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:19:19.095 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:19:19.097 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:19:23.124 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:19:23.881 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.293 seconds (process running for 6.116)
+11:19:26.338 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 12420 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:19:26.339 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:19:26.340 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:19:30.213 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:19:30.940 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.033 seconds (process running for 5.897)
+11:19:33.919 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+11:21:08.125 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 17360 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:21:08.125 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:21:08.126 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:21:12.242 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:21:13.020 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.328 seconds (process running for 6.194)
+11:21:13.618 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:21:13.725 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:21:13.738 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:21:13.748 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:21:13.759 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:21:13.785 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:21:15.926 [http-nio-8080-exec-4] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 102
+11:21:19.325 [http-nio-8080-exec-2] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 102
+11:22:58.609 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 17152 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:22:58.610 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:22:58.612 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:23:02.372 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:23:03.085 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.898 seconds (process running for 5.759)
+11:23:06.087 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 102
+11:23:07.730 [http-nio-8080-exec-2] INFO  c.e.a.controller.PlaylistController - Deleting playlist with id 102
+11:23:07.780 [http-nio-8080-exec-2] INFO  c.e.app.services.PlaylistService - Playlist with id 102 was successfully deleted
+11:23:11.726 [http-nio-8080-exec-5] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 102
+11:23:11.735 [http-nio-8080-exec-5] ERROR c.e.a.controller.PlaylistController - Playlist not found with id: 102
+11:23:12.845 [http-nio-8080-exec-1] INFO  c.e.app.controller.SongController - Getting all songs
+11:23:12.946 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:23:12.958 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:23:12.974 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:23:12.978 [http-nio-8080-exec-8] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:23:12.994 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:08.552 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 20376 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:24:08.553 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:24:08.554 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:24:12.283 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:24:13.087 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.959 seconds (process running for 5.736)
+11:24:16.894 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:24:16.992 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:17.011 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:17.030 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:17.041 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:24:17.042 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:18.239 [http-nio-8080-exec-6] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 52
+11:24:19.323 [http-nio-8080-exec-3] INFO  c.e.a.controller.PlaylistController - Deleting playlist with id 52
+11:24:19.368 [http-nio-8080-exec-3] INFO  c.e.app.services.PlaylistService - Playlist with id 52 was successfully deleted
+11:24:19.426 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:24:19.433 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:19.455 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:19.469 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:19.475 [http-nio-8080-exec-2] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:24:19.480 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:34.820 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Creating an playlist
+11:24:34.820 [http-nio-8080-exec-1] INFO  c.e.app.services.PlaylistService - MyCallAngel0My Favourites
+11:24:34.857 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Playlist added with id 152
+11:24:36.324 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+11:24:36.326 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:36.351 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:36.363 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:24:36.375 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:24:36.378 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:27:06.879 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22940 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:27:06.880 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:27:06.881 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:27:11.000 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:27:11.826 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.376 seconds (process running for 6.253)
+11:27:18.562 [http-nio-8080-exec-10] INFO  c.e.app.controller.SongController - Getting all songs
+11:27:18.682 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:27:18.702 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:27:18.718 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:27:18.730 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:27:18.734 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:30:04.118 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 12032 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:30:04.118 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:30:04.119 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:30:07.789 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:30:08.547 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.847 seconds (process running for 5.654)
+11:30:12.012 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+11:30:12.114 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:30:12.129 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:30:12.142 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:30:12.154 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:30:12.234 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:31:15.110 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 16212 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:31:15.111 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:31:15.112 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:31:18.957 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:31:19.753 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.085 seconds (process running for 5.929)
+11:31:23.153 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:31:23.247 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:31:23.266 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:31:23.284 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:31:23.295 [http-nio-8080-exec-3] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:31:23.298 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:32:20.232 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 14864 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:32:20.232 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:32:20.233 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:32:24.267 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:32:25.098 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.332 seconds (process running for 6.209)
+11:32:27.549 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:32:27.667 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:32:27.684 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:32:27.698 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:32:27.708 [http-nio-8080-exec-2] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:32:27.710 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:32:35.669 [http-nio-8080-exec-7] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 2
+11:32:36.698 [http-nio-8080-exec-9] INFO  c.e.a.controller.PlaylistController - Deleting playlist with id 2
+11:32:36.746 [http-nio-8080-exec-9] INFO  c.e.app.services.PlaylistService - Playlist with id 2 was successfully deleted
+11:32:36.796 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:32:36.799 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:32:36.819 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:32:36.832 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:32:36.852 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:32:36.893 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:33:07.692 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+11:33:07.700 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:33:07.720 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:33:07.733 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:33:07.745 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:33:07.769 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:37:38.863 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21724 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:37:38.863 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:37:38.864 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:37:42.640 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:37:43.459 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.016 seconds (process running for 5.888)
+11:37:47.847 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:37:47.860 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:37:47.874 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:37:47.887 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:37:47.887 [http-nio-8080-exec-8] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:39:17.976 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21844 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:39:17.977 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:39:17.978 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:39:21.650 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:39:22.385 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.848 seconds (process running for 5.675)
+11:39:36.376 [http-nio-8080-exec-3] INFO  c.e.a.c.AuthenticationController - User MyCallAngel0 successfully logged!
+11:39:36.433 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:39:36.453 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:39:36.466 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:39:36.477 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:39:36.484 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:40:48.392 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22748 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:40:48.393 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:40:48.394 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:40:52.194 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:40:52.950 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.004 seconds (process running for 5.933)
+11:40:55.395 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:40:55.409 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:40:55.421 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:40:55.429 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:40:55.433 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:41:41.243 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23396 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:41:41.243 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:41:41.244 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:41:44.943 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:41:45.712 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.898 seconds (process running for 5.817)
+11:41:48.366 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:41:48.392 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:41:48.409 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:41:48.424 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:41:48.426 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:42:02.694 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 20184 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:42:02.694 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:42:02.695 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:42:06.482 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:42:07.283 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.015 seconds (process running for 5.921)
+11:42:10.879 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:42:10.894 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:42:10.906 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:42:10.914 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:42:10.917 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:42:22.150 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23068 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:42:22.151 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:42:22.152 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:42:25.902 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:42:26.654 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.959 seconds (process running for 5.961)
+11:42:28.984 [http-nio-8080-exec-2] INFO  c.e.app.controller.SongController - Getting all songs
+11:42:29.166 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:42:29.185 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:42:29.199 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:42:29.213 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:42:29.221 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:43:04.846 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 8844 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:43:04.847 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:43:04.848 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:43:08.778 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:43:09.546 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.106 seconds (process running for 6.004)
+11:43:17.640 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:43:17.742 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:43:17.757 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:43:17.767 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:43:17.779 [http-nio-8080-exec-3] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:43:17.779 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:44:05.052 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 20192 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:44:05.053 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:44:05.054 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:44:08.852 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:44:09.557 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.917 seconds (process running for 5.883)
+11:44:12.026 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:44:12.049 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:44:12.065 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:44:12.077 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:44:12.077 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:45:57.479 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 20688 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:45:57.480 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:45:57.480 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:46:01.413 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:46:02.196 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.162 seconds (process running for 6.02)
+11:46:04.625 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:46:04.720 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:46:04.736 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:46:04.750 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:46:04.761 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:46:04.764 [http-nio-8080-exec-3] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:46:26.812 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23344 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:46:26.813 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:46:26.814 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:46:30.653 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:46:31.472 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.103 seconds (process running for 6.128)
+11:46:36.268 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+11:46:36.377 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:46:36.397 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:46:36.415 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:46:36.429 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:46:36.431 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:48:37.660 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 18060 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:48:37.660 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:48:37.661 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:48:42.438 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:48:43.206 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.987 seconds (process running for 7.01)
+11:48:45.728 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:48:45.821 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:48:45.838 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:48:45.851 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:48:45.862 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:48:45.976 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:50:09.417 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21116 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:50:09.418 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:50:09.419 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:50:13.403 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:50:14.179 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.225 seconds (process running for 6.132)
+11:50:16.596 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 4752 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:50:16.596 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:50:16.597 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:50:20.263 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:50:20.990 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.806 seconds (process running for 5.662)
+11:50:23.794 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+11:50:23.892 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:50:23.914 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:50:23.929 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:50:23.941 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:50:24.039 [http-nio-8080-exec-3] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:52:29.651 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21480 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:52:29.651 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:52:29.653 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:52:33.695 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:52:34.431 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.234 seconds (process running for 6.264)
+11:52:36.883 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+11:52:36.990 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:52:37.005 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:52:37.020 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:52:37.030 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:52:37.033 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:52:59.917 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22800 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:52:59.919 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:52:59.919 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:53:03.656 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:53:04.439 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.934 seconds (process running for 5.939)
+11:53:07.846 [http-nio-8080-exec-4] INFO  c.e.app.controller.SongController - Getting all songs
+11:53:07.961 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:53:07.976 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:53:07.989 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:53:08.000 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:53:08.002 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:53:56.574 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22288 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:53:56.575 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:53:56.576 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:54:00.390 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:54:01.191 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.037 seconds (process running for 6.101)
+11:54:03.538 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+11:54:03.650 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:54:03.664 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:54:03.679 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:54:03.688 [http-nio-8080-exec-2] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:54:03.692 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:54:27.593 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23736 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:54:27.594 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:54:27.595 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:54:31.513 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:54:32.277 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.12 seconds (process running for 6.181)
+11:54:35.077 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+11:54:35.211 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:54:35.225 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:54:35.241 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:54:35.254 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:54:35.255 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:55:03.173 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 16820 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:55:03.174 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:55:03.174 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:55:07.110 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:55:07.892 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.179 seconds (process running for 6.212)
+11:55:12.185 [http-nio-8080-exec-2] INFO  c.e.app.controller.SongController - Getting all songs
+11:55:12.296 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:55:12.310 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:55:12.334 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:55:12.346 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:55:12.354 [http-nio-8080-exec-10] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:55:35.284 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23996 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:55:35.284 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:55:35.285 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:55:39.214 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:55:39.955 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.095 seconds (process running for 6.13)
+11:55:42.399 [http-nio-8080-exec-2] INFO  c.e.app.controller.SongController - Getting all songs
+11:55:42.507 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:55:42.524 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:55:42.537 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:55:42.550 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:55:42.551 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:56:14.026 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22944 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:56:14.027 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:56:14.027 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:56:17.844 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:56:18.632 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.016 seconds (process running for 6.045)
+11:56:21.534 [http-nio-8080-exec-4] INFO  c.e.app.controller.SongController - Getting all songs
+11:56:21.640 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:56:21.654 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:56:21.669 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:56:21.680 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:56:21.681 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:57:21.273 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 20780 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:57:21.274 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:57:21.275 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:57:25.028 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:57:25.790 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.943 seconds (process running for 5.977)
+11:57:28.038 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+11:57:28.173 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:57:28.191 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:57:28.207 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:57:28.220 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:57:28.220 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:57:50.461 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 19764 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:57:50.462 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:57:50.463 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:57:54.436 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:57:55.275 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.214 seconds (process running for 6.324)
+11:57:57.434 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+11:57:57.534 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:57:57.549 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:57:57.563 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:57:57.569 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:57:57.574 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:58:30.896 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 4800 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:58:30.897 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:58:30.898 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:58:34.767 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:58:35.507 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.012 seconds (process running for 6.02)
+11:58:38.090 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+11:58:38.189 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:58:38.205 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:58:38.219 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:58:38.230 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:58:38.245 [http-nio-8080-exec-10] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:58:58.001 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 17348 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+11:58:58.002 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+11:58:58.003 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+11:59:01.854 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+11:59:02.619 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.063 seconds (process running for 6.106)
+11:59:06.832 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+11:59:06.941 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:06.957 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:06.976 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:06.987 [http-nio-8080-exec-2] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:59:06.988 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:47.237 [http-nio-8080-exec-1] INFO  c.e.app.controller.SongController - Getting all songs
+11:59:47.242 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:47.265 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:47.279 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:47.290 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:47.310 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:59:50.125 [http-nio-8080-exec-5] INFO  c.e.app.controller.SongController - Getting all songs
+11:59:50.131 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:50.153 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:50.165 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:50.176 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:50.203 [http-nio-8080-exec-8] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+11:59:59.091 [http-nio-8080-exec-9] INFO  c.e.app.controller.SongController - Getting all songs
+11:59:59.094 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:59.114 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:59.123 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:59.132 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+11:59:59.159 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+12:01:07.218 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 16084 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:01:07.219 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:01:07.220 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:01:11.483 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:01:12.317 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.654 seconds (process running for 6.505)
+12:01:41.138 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 20512 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:01:41.139 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:01:41.140 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:01:45.273 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:01:46.088 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.396 seconds (process running for 6.285)
+12:01:55.750 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+12:01:55.900 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:01:55.917 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:01:55.925 [http-nio-8080-exec-2] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+12:01:55.925 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:01:55.945 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:01:57.010 [http-nio-8080-exec-7] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:01:58.537 [http-nio-8080-exec-1] INFO  c.e.app.controller.SongController - Getting all songs
+12:01:58.545 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:01:58.574 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:01:58.590 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:01:58.602 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:01:58.622 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+12:02:05.097 [http-nio-8080-exec-3] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:03:20.622 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 3524 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:03:20.623 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:03:20.624 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:03:24.520 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:03:25.308 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.136 seconds (process running for 6.008)
+12:03:29.671 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:04:12.342 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23372 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:04:12.343 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:04:12.344 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:04:16.402 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:04:17.158 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.262 seconds (process running for 6.296)
+12:04:19.358 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:04:59.975 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 10292 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:04:59.976 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:04:59.977 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:05:03.686 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:05:04.426 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.894 seconds (process running for 5.695)
+12:05:07.101 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:05:23.689 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 16396 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:05:23.689 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:05:23.690 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:05:27.652 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:05:28.429 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.2 seconds (process running for 6.101)
+12:05:30.490 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:07:53.071 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 14516 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:07:53.072 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:07:53.073 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:07:56.983 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:07:57.787 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.154 seconds (process running for 6.151)
+12:08:01.511 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:20:15.206 [http-nio-8080-exec-4] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:21:27.866 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23064 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:21:27.867 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:21:27.868 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:21:32.574 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:21:33.387 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 6.048 seconds (process running for 7.117)
+12:22:33.508 [http-nio-8080-exec-9] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:23:25.943 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 11640 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:23:25.944 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:23:25.945 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:23:29.922 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:23:30.707 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.181 seconds (process running for 6.049)
+12:23:32.979 [http-nio-8080-exec-2] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:23:51.106 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 18436 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:23:51.106 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:23:51.107 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:23:54.889 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:23:55.658 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.964 seconds (process running for 5.804)
+12:23:57.604 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:28:22.587 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23544 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:28:22.588 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:28:22.589 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:28:26.459 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:28:27.259 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.113 seconds (process running for 5.903)
+12:28:30.206 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:29:57.654 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 6444 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:29:57.655 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:29:57.656 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:30:01.812 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:30:02.782 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.558 seconds (process running for 6.364)
+12:30:21.346 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:30:28.022 [http-nio-8080-exec-6] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:32:08.885 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23344 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:32:08.886 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:32:08.887 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:32:12.817 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:32:13.643 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.18 seconds (process running for 6.073)
+12:32:15.495 [http-nio-8080-exec-2] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:33:02.768 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 24404 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:33:02.769 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:33:02.770 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:33:07.161 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:33:07.981 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.735 seconds (process running for 6.73)
+12:33:10.130 [http-nio-8080-exec-7] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:33:36.547 [http-nio-8080-exec-6] INFO  c.e.app.controller.AlbumController - Getting song with id 152
+12:33:41.825 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+12:33:50.635 [http-nio-8080-exec-7] INFO  c.e.a.c.AuthenticationController - User MyCallAngel0 successfully logged!
+12:33:50.692 [http-nio-8080-exec-2] INFO  c.e.app.controller.SongController - Getting all songs
+12:33:50.704 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:33:50.717 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:33:50.733 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:33:50.741 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:33:50.749 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+12:33:54.207 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:33:54.220 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:33:54.232 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:33:54.241 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:35:55.779 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 8704 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:35:55.780 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:35:55.781 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:35:59.604 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:36:00.350 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.011 seconds (process running for 5.929)
+12:36:04.263 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:36:04.764 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:36:04.782 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:38:54.937 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 9388 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:38:54.938 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:38:54.939 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:38:58.750 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:38:59.480 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.025 seconds (process running for 5.958)
+12:39:11.613 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:39:12.126 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:39:12.146 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:39:21.605 [http-nio-8080-exec-6] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:39:21.654 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:39:21.667 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:39:23.029 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:39:23.071 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:39:23.086 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:40:27.004 [http-nio-8080-exec-7] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:40:27.064 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:40:27.076 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:40:42.885 [http-nio-8080-exec-2] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:40:42.938 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:40:42.946 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:40:50.025 [http-nio-8080-exec-9] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:40:50.078 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:40:50.082 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:44:52.801 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 13472 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:44:52.801 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:44:52.803 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:44:57.494 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:44:58.287 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 6.01 seconds (process running for 6.924)
+12:45:00.525 [http-nio-8080-exec-4] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:45:01.114 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:45:01.131 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:45:05.731 [http-nio-8080-exec-7] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:45:05.789 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:45:05.805 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:47:50.276 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21872 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:47:50.276 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:47:50.277 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:47:55.144 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:47:55.962 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 6.273 seconds (process running for 7.283)
+12:47:59.070 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:47:59.636 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:47:59.655 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:48:06.118 [http-nio-8080-exec-7] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:48:06.176 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:48:06.189 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:49:47.329 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 904 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:49:47.330 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:49:47.331 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:49:51.416 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:49:52.246 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.319 seconds (process running for 6.203)
+12:49:53.934 [http-nio-8080-exec-1] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:49:54.464 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:49:54.484 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:50:00.509 [http-nio-8080-exec-7] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:50:00.563 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:50:00.577 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:50:37.382 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21832 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:50:37.382 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:50:37.383 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:50:42.279 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:50:43.326 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 6.466 seconds (process running for 7.499)
+12:50:53.467 [http-nio-8080-exec-4] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:50:54.065 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:50:54.090 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:50:57.510 [http-nio-8080-exec-6] INFO  c.e.a.controller.PlaylistController - Updating playlist with id 1
+12:50:57.516 [http-nio-8080-exec-6] INFO  c.e.app.services.PlaylistService - Playlist with id 1 was successfully updated
+12:51:02.466 [http-nio-8080-exec-3] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:51:02.532 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:02.545 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:08.950 [http-nio-8080-exec-9] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:51:09.005 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:09.017 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:09.338 [http-nio-8080-exec-3] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:51:09.400 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:09.411 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:09.589 [http-nio-8080-exec-10] INFO  c.e.app.controller.SongController - Getting all songs
+12:51:09.591 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:09.609 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:09.621 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:09.631 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:09.658 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+12:51:31.198 [http-nio-8080-exec-5] INFO  c.e.app.controller.SongController - Getting all songs
+12:51:31.202 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:31.223 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:31.234 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:31.244 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+12:51:31.280 [http-nio-8080-exec-6] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+12:52:54.656 [http-nio-8080-exec-7] INFO  c.e.a.controller.PlaylistController - Getting all playlists
+12:53:52.182 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+12:57:29.402 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23016 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+12:57:29.403 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+12:57:29.404 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+12:57:33.217 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+12:57:33.964 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.006 seconds (process running for 5.83)
+12:58:25.533 [http-nio-8080-exec-10] INFO  c.e.a.controller.PlaylistController - Adding songs to playlist with id 1
+12:58:25.615 [http-nio-8080-exec-10] ERROR c.e.a.controller.PlaylistController - Song not found with id: 152
+12:58:31.527 [http-nio-8080-exec-3] INFO  c.e.a.controller.PlaylistController - Adding songs to playlist with id 1
+12:58:31.555 [http-nio-8080-exec-3] INFO  c.e.app.services.PlaylistService - Songs successfully added in playlist
+12:58:37.430 [http-nio-8080-exec-6] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+12:58:48.535 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+13:16:32.277 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 21992 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:16:32.279 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:16:32.281 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:16:35.950 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:16:36.706 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.847 seconds (process running for 5.697)
+13:16:41.128 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+13:18:10.292 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 8524 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:18:10.293 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:18:10.294 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:18:13.978 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:18:14.740 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.88 seconds (process running for 5.887)
+13:18:17.331 [http-nio-8080-exec-9] INFO  c.e.app.controller.SongController - Getting all songs
+13:19:13.767 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 16532 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:19:13.767 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:19:13.768 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:19:17.883 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:19:18.665 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.349 seconds (process running for 6.288)
+13:19:22.889 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+13:22:46.229 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 20376 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:22:46.230 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:22:46.231 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:22:50.700 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:22:51.654 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.929 seconds (process running for 6.912)
+13:24:22.625 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+13:24:31.599 [http-nio-8080-exec-2] INFO  c.e.a.c.AuthenticationController - User MyCallAngel0 successfully logged!
+13:24:31.657 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+13:24:31.664 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:24:31.680 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:24:31.694 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:24:31.705 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:24:31.713 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:24:53.861 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 11880 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:24:53.861 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:24:53.862 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:24:57.961 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:24:58.791 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.347 seconds (process running for 6.21)
+13:26:07.558 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 8532 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:26:07.559 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:26:07.559 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:26:11.295 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:26:12.071 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.94 seconds (process running for 5.772)
+13:26:23.308 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+13:26:23.429 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:26:23.441 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:26:23.452 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:26:23.453 [http-nio-8080-exec-7] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:26:23.463 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:26:30.035 [http-nio-8080-exec-4] INFO  c.e.app.controller.SongController - Getting all songs
+13:26:30.043 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:26:30.064 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:26:30.080 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:26:30.092 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:26:30.128 [http-nio-8080-exec-8] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:27:52.795 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 23372 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:27:52.796 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:27:52.797 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:27:56.859 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:27:57.654 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.313 seconds (process running for 6.379)
+13:28:00.485 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+13:28:00.583 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:28:00.598 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:28:00.614 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:29:07.088 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 10988 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:29:07.089 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:29:07.090 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:29:11.156 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:29:12.020 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.354 seconds (process running for 6.445)
+13:29:14.728 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+13:29:14.835 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:29:14.852 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:29:14.865 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:29:14.877 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:29:14.924 [http-nio-8080-exec-3] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:29:48.082 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 1180 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:29:48.083 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:29:48.084 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:29:51.829 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:29:52.599 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.934 seconds (process running for 5.783)
+13:30:20.954 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+13:30:21.047 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:30:21.061 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:30:21.075 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:30:21.088 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:30:21.088 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:30:53.841 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 17196 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:30:53.842 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:30:53.842 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:30:57.544 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:30:58.326 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.924 seconds (process running for 5.963)
+13:31:08.416 [http-nio-8080-exec-9] INFO  c.e.app.controller.SongController - Getting all songs
+13:31:08.521 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:31:08.536 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:31:08.547 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:32:00.459 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 8208 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:32:00.460 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:32:00.461 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:32:04.093 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:32:04.927 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.884 seconds (process running for 5.914)
+13:32:07.553 [http-nio-8080-exec-9] INFO  c.e.app.controller.SongController - Getting all songs
+13:32:07.661 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:32:07.685 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:32:07.697 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:32:16.827 [http-nio-8080-exec-5] INFO  c.e.a.controller.PlaylistController - Getting playlist with id 1
+13:32:16.951 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:32:16.979 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:32:19.559 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+13:32:19.568 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:32:19.583 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:32:19.599 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:34:05.342 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 3156 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:34:05.342 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:34:05.343 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:34:09.038 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:34:09.892 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.98 seconds (process running for 6.031)
+13:34:15.903 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 3604 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:34:15.903 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:34:15.904 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:34:19.676 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:34:20.423 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.952 seconds (process running for 6.181)
+13:35:34.249 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+13:35:34.358 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:35:34.374 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:35:34.393 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:35:34.404 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:35:34.406 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:36:07.573 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22144 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:36:07.575 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:36:07.575 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:36:11.391 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:36:12.195 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.04 seconds (process running for 5.864)
+13:36:15.385 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+13:36:15.527 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:15.542 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:15.556 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:15.567 [http-nio-8080-exec-3] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:36:15.567 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:31.566 [http-nio-8080-exec-4] INFO  c.e.a.c.AuthenticationController - User MyCallAngel0 successfully logged!
+13:36:31.620 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+13:36:31.626 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:31.647 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:31.659 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:31.668 [http-nio-8080-exec-9] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:36:31.671 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:33.866 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+13:36:33.870 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:33.894 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:33.905 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:33.914 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:33.919 [http-nio-8080-exec-3] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:36:43.606 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 10916 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:36:43.607 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:36:43.608 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:36:47.532 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:36:48.336 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.161 seconds (process running for 6.043)
+13:36:51.187 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+13:36:51.293 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:51.308 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:51.323 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:51.335 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:36:51.338 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:50:15.953 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 6824 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:50:15.954 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:50:15.955 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:50:19.663 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:50:20.415 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.888 seconds (process running for 5.722)
+13:50:22.860 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+13:50:22.995 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:50:23.010 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:50:23.022 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:50:23.034 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:50:23.127 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:51:06.995 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:54:07.231 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+13:54:07.236 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:07.264 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:07.277 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:07.287 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:07.293 [http-nio-8080-exec-9] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:54:08.777 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+13:54:08.781 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:08.801 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:08.811 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:08.821 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:08.824 [http-nio-8080-exec-10] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:54:09.418 [http-nio-8080-exec-2] INFO  c.e.app.controller.SongController - Getting all songs
+13:54:09.425 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:09.451 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:09.463 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:09.476 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:09.476 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:54:21.385 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 13200 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:54:21.385 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:54:21.387 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:54:25.130 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:54:25.853 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.917 seconds (process running for 5.876)
+13:54:28.378 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+13:54:28.501 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:28.517 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:28.530 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:28.543 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:54:28.652 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:54:38.965 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:56:08.997 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 6872 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:56:08.998 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:56:08.999 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:56:12.762 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:56:13.529 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.96 seconds (process running for 5.807)
+13:56:16.399 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+13:56:16.501 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:56:16.515 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:56:16.535 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:56:16.544 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:56:16.596 [http-nio-8080-exec-4] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+13:56:54.471 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 22968 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:56:54.472 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:56:54.473 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:56:58.327 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:56:59.163 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.147 seconds (process running for 6.254)
+13:57:01.766 [http-nio-8080-exec-9] INFO  c.e.app.controller.SongController - Getting all songs
+13:57:01.886 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:57:01.906 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:57:01.923 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:57:08.343 [http-nio-8080-exec-2] INFO  c.e.a.controller.PlaylistController - Creating an playlist
+13:57:08.343 [http-nio-8080-exec-2] INFO  c.e.app.services.PlaylistService - MyCallAngel0My Favourites
+13:57:08.407 [http-nio-8080-exec-2] INFO  c.e.a.controller.PlaylistController - Playlist added with id 202
+13:57:10.678 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+13:57:10.682 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:57:10.706 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:57:10.718 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:59:35.300 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 24324 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+13:59:35.301 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+13:59:35.302 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+13:59:39.109 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+13:59:39.867 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 4.995 seconds (process running for 5.82)
+13:59:46.688 [http-nio-8080-exec-7] INFO  c.e.app.controller.SongController - Getting all songs
+13:59:46.780 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:59:46.798 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+13:59:46.813 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:04:02.670 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+14:04:56.099 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 24440 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+14:04:56.100 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+14:04:56.101 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+14:05:00.391 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+14:05:01.277 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 5.6 seconds (process running for 6.635)
+14:05:13.817 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+14:05:21.169 [http-nio-8080-exec-4] INFO  c.e.a.c.AuthenticationController - User MyCallAngel0 successfully logged!
+14:05:21.223 [http-nio-8080-exec-5] INFO  c.e.app.controller.SongController - Getting all songs
+14:05:21.230 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:05:21.248 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:05:21.259 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:05:21.270 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:05:21.290 [http-nio-8080-exec-10] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+14:05:35.908 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:05:35.922 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:05:35.935 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:05:35.946 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:10:24.092 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 11376 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+14:10:24.093 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+14:10:24.094 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+14:10:26.826 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+14:10:27.388 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.567 seconds (process running for 4.127)
+14:10:30.632 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+14:10:30.699 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:10:30.709 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:10:30.719 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:10:30.727 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:10:30.746 [http-nio-8080-exec-9] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+14:10:34.865 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+14:10:34.869 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:10:34.888 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:10:34.898 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:10:34.906 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:10:34.922 [http-nio-8080-exec-5] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+14:32:13.817 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+14:35:24.987 [main] INFO  c.e.app.services.PlaylistService - exampleUserPlaylist
+14:35:24.993 [main] INFO  c.e.app.services.PlaylistService - Playlist with id 1 was successfully deleted
+14:35:25.003 [main] INFO  c.e.app.services.PlaylistService - Playlist with id 1 was successfully updated
+14:41:35.797 [main] INFO  com.endava.app.RhythmiqApplication - Starting RhythmiqApplication using Java 17.0.8.1 with PID 8564 (C:\Programs\Project\app\target\classes started by user in C:\Programs\Project\app)
+14:41:35.797 [main] DEBUG com.endava.app.RhythmiqApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+14:41:35.798 [main] INFO  com.endava.app.RhythmiqApplication - No active profile set, falling back to 1 default profile: "default"
+14:41:38.399 [main] DEBUG c.e.a.c.JWTAuthentificationFilter - Filter 'JWTAuthentificationFilter' configured for use
+14:41:38.905 [main] INFO  com.endava.app.RhythmiqApplication - Started RhythmiqApplication in 3.341 seconds (process running for 3.789)
+14:41:43.605 [http-nio-8080-exec-8] INFO  c.e.app.controller.SongController - Getting all songs
+14:42:01.673 [http-nio-8080-exec-6] INFO  c.e.a.c.AuthenticationController - User MyCallAngel0 successfully logged!
+14:42:01.705 [http-nio-8080-exec-5] INFO  c.e.app.controller.SongController - Getting all songs
+14:42:01.708 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:01.719 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:01.724 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:01.730 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:01.740 [http-nio-8080-exec-1] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+14:42:08.920 [http-nio-8080-exec-3] INFO  c.e.app.controller.SongController - Getting all songs
+14:42:08.922 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:08.933 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:08.940 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:08.945 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:08.959 [http-nio-8080-exec-6] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0
+14:42:12.467 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:12.474 [http-nio-8080-exec-3] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:12.480 [http-nio-8080-exec-9] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:12.485 [http-nio-8080-exec-10] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:18.236 [http-nio-8080-exec-8] INFO  c.e.app.controller.AlbumController - Getting song with id 1
+14:42:18.269 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:18.275 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:18.281 [http-nio-8080-exec-7] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:18.285 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:25.676 [http-nio-8080-exec-8] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:25.682 [http-nio-8080-exec-6] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:25.686 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:25.691 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:27.922 [http-nio-8080-exec-6] INFO  c.e.app.controller.SongController - Getting all songs
+14:42:27.924 [http-nio-8080-exec-4] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:27.938 [http-nio-8080-exec-5] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:27.943 [http-nio-8080-exec-2] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:27.953 [http-nio-8080-exec-1] INFO  c.e.a.services.AuthenticationService - Getting token for user MyCallAngel0
+14:42:27.966 [http-nio-8080-exec-3] INFO  c.e.app.controller.APIController - Getting playlists from user MyCallAngel0

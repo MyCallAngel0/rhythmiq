@@ -47,7 +47,7 @@
         backdrop-filter: blur(0)!important;
     }
     .LKFFk88SIRC9QKKUWR5u {
-        display: flex;
+        display: inline;
         font-size: 18px;
         gap: 15px;
         z-index: 1;
@@ -198,14 +198,14 @@
                 <header data-testid="topbar" class="facDIsOQo9q7kiWc4jSg coBkWVskipFo8KxLKief qxbaGYC8rgMLfyOuYRCM">
                     <img th:src="@{/static/images/RhythmiqIcon.png}" width="48"/>
                     <p style="font-size: 24px; color: lightgray; font-family: 'Roboto', 'Arial', sans-serif"><b>Rhythmiq</b></p>
-                    <div class="rwdnt1SmeRC_lhLVfIzg">
+                    <div class="rwdnt1SmeRC_lhLVfIzg" style="justify-content: center">
                             <div class="LKFFk88SIRC9QKKUWR5u">
                                 <a onclick="location.href='/register'" style="cursor: pointer">Register</a>
                                 <a onclick="location.href='/login'" style="cursor: pointer" data-testid="login-button" data-encore-id="buttonPrimary" class="Button-sc-qlcn5g-0 fyugtm">
                                     <span class="ButtonInner-sc-14ud5tc-0 bzuYkS encore-inverted-light-set">Login</span>
                                 </a>
                                     <a id="profile-link">
-                                        <img th:src="@{/static/images/user-icon.jpg}" alt="User" width="32">
+                                        <img style="vertical-align: middle; margin-bottom: 5px" th:src="@{https://img.freepik.com/icones-gratis/do-utilizador_318-644324.jpg?w=360}" alt="User" width="32">
                                     </a>
                                     <script th:inline="javascript">
                                         document.addEventListener('DOMContentLoaded', async function () {
@@ -323,11 +323,9 @@
                                                                     </tbody>
                                                                 </table>
                                                                 <div class="popup" id="playlistPopup">
+                                                                    <button class="closeBtn" onclick="closePopup()">Close</button>
                                                                     <label for="playlistSelect">Select Playlist:</label>
                                                                     <select id="playlistSelect">
-                                                                        <option value="playlist1">Playlist 1</option>
-                                                                        <option value="playlist2">Playlist 2</option>
-                                                                        <!-- Add more playlists as needed -->
                                                                     </select>
                                                                     <button id="addToPlaylistBtn">Add to Playlist</button>
                                                                 </div>

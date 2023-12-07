@@ -1,13 +1,13 @@
 <configuration>
 
-    <!-- Console Appender for INFO, DEBUG, and ERROR -->
+    <!-- Console Appender for INFO, DEBUG, WARN, and ERROR -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <!-- File Appender for INFO, DEBUG, and ERROR -->
+    <!-- File Appender for INFO, DEBUG, WARN, and ERROR -->
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <file>logs/Logs.log</file> <!-- Specify the path to your log file -->
         <encoder>
@@ -16,7 +16,7 @@
     </appender>
 
     <!-- Root Logger for Console -->
-    <root level="info">
+    <root level="debug">
         <appender-ref ref="CONSOLE" />
     </root>
 
